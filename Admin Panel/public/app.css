@@ -1,0 +1,100 @@
+.body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background: lightgray; }
+
+a {
+  text-decoration: none; }
+
+/*Horizontal Navigation Bar*/
+.nav {
+  position: fixed;
+  z-index: 999;
+  background: #3F51B5;
+  height: 70px;
+  width: 100%;
+  display: flex; }
+  .nav__left {
+    min-width: 240px;
+    align-items: center;
+    display: flex;
+    justify-content: center; }
+    .nav__left a {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: #fff; }
+    .nav__left img {
+      margin-right: 10px; }
+    .nav__left span {
+      font-size: 20px;
+      text-transform: uppercase; }
+  .nav__right {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center; }
+    .nav__right__menu {
+      display: flex;
+      align-items: center; }
+      .nav__right__menu img {
+        margin: 0 20px; }
+      .nav__right__menu .search-wrapper {
+        position: relative; }
+    .nav__right__list ul {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      height: 100%; }
+      .nav__right__list ul li {
+        position: relative;
+        display: inline-block;
+        padding: 0 12px;
+        line-height: 70px; }
+        .nav__right__list ul li a {
+          display: block; }
+          .nav__right__list ul li a img {
+            overflow: hidden;
+            vertical-align: middle; }
+    .nav__right__list .portret__photo {
+      height: 36px;
+      width: 36px;
+      border-radius: 50%; }
+
+.search-wrapper > input {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  padding: 6px 18px; }
+
+.search-wrapper img {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+  margin-right: 0; }
+
+/*Vertical Navigation Bar*/
+.sidenav {
+  position: fixed;
+  margin-top: 70px;
+  width: 240px;
+  height: 100%;
+  background-color: white;
+  font-size: 10px; }
+  .sidenav ul {
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0 16px; }
+    .sidenav ul li a {
+      color: black; }
+  .sidenav li a {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; }
+  .sidenav li img {
+    margin-right: 10px; }
+  .sidenav h {
+    margin-left: 50px; }
+
