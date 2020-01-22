@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="app.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
@@ -13,33 +13,33 @@
     <nav class="nav">
         <div class="nav__left">
             <a href="#">
-                <img src=" images/logo.svg" alt="Meniu">
+                <img src=" assets/images/logo.svg" alt="Meniu">
                 <span>MINTON</span>
             </a>
         </div>
         <div class="nav__right">
             <div class="nav__right__menu">
-                <img src=" images/menu-24px.svg" alt="Meniu">
+                <img src=" assets/images/menu-24px.svg" alt="Meniu">
                 <div class="search-wrapper">
                     <input type="text" name="searchBox" value="Search...">
                     <a href="#">
-                        <img src=" images/search-24px.svg">
+                        <img src=" assets/images/search-24px.svg">
                     </a>
                 </div>
             </div>
             <div class="nav__right__list">
                 <ul>
                     <li>
-                        <a href="#"><img src=" images/crop_free-24px.svg" alt="Meniu"></a>
+                        <a href="#"><img src=" assets/images/crop_free-24px.svg" alt="Meniu"></a>
                     </li>
                     <li>
-                        <a href="#"><img src=" images/more_horiz-24px.svg" alt="Meniu"></a>
+                        <a href="#"><img src=" assets/images/more_horiz-24px.svg" alt="Meniu"></a>
                     </li>
                     <li>
-                        <a href="#"><img src=" images/notifications-24px.svg" alt="Meniu"></a>
+                        <a href="#"><img src=" assets/images/notifications-24px.svg" alt="Meniu"></a>
                     </li>
                     <li>
-                        <a href="#"><img class="portret__photo" src=" images/portret.jpg" alt="Meniu"></a>
+                        <a href="#"><img class="portret__photo" src=" assets/images/portret.jpg" alt="Meniu"></a>
                     </li>
                 </ul>
             </div>
@@ -47,76 +47,90 @@
     </nav>
     
     <nav class="sidenav">
-        <h5>Main</h5>
-        <ul>
-            <li>
-                <a href="#">
-                    <img src=" images/home-24px.svg" alt="Dashboard"><span>Dashboard</span>
-                </a> 
-            </li>
-            <li>
-                <a href="#">
-                    <img src=" images/colorize-24px.svg" alt=""><span>UI Kit</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src=" images/all_inclusive-24px.svg" alt=""><span>Typography</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src=" images/emoji_objects-24px.svg" alt=""><span>Components</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src=" images/fireplace-24px.svg" alt=""><span>Icons</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src=" images/create-24px.svg" alt=""><span>Forms</span>
-                </a>
-            </li>
-        </ul>
-        <h5>More</h5>
-        <ul>
-            <li>
-                <a href="#">
-                    <img src=" images/format_list_bulleted-24px.svg" alt=""><span>Tables</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src=" images/show_chart-24px.svg" alt=""><span>Charts</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src=" images/map-24px.svg" alt=""><span>Maps</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src=" images/email-24px.svg" alt=""><span>Mail</span>
-                </a>
-            </li>
-        </ul>
-        <h5>Extras</h5>
-        <ul>
-            <li>
-                <a href="#">
-                    <img src=" images/file_copy-24px.svg" alt=""><span>Pages</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src=" images/pages-24px.svg" alt=""><span>Extras</span>
-                </a>
-            </li>
-        </ul>
+        <div class="sidenav-divider">
+            <h5 class="sidenav__title">Main</h5>
+            <ul class="sidenav__list">
+                <li class="active">
+                    <a href="#">
+                        <img src=" assets/images/home-24px.svg" alt="Dashboard"><span>Dashboard</span>
+                    </a> 
+                </li>
+                <li>
+                    <a href="#">
+                        <img src=" assets/images/colorize-24px.svg" alt="Dashboard"><span>UI Kit</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src=" assets/images/all_inclusive-24px.svg" alt="Dashboard"><span>Typography</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src=" assets/images/emoji_objects-24px.svg" alt="Dashboard"><span>Components</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src=" assets/images/fireplace-24px.svg" alt="Dashboard"><span>Icons</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src=" assets/images/create-24px.svg" alt="Dashboard"><span>Forms</span>
+                    </a>
+                </li>
+            </ul>
+            <h5 class="sidenav__title">More</h5>
+            <ul class="sidenav__list">
+                <li>
+                    <a href="#">
+                        <img src=" assets/images/format_list_bulleted-24px.svg" alt=""><span>Tables</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src=" assets/images/show_chart-24px.svg" alt=""><span>Charts</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src=" assets/images/map-24px.svg" alt=""><span>Maps</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src=" assets/images/email-24px.svg" alt=""><span>Mail</span>
+                    </a>
+                </li>
+            </ul>
+            <h5 class="sidenav__title">Extras</h5>
+            <ul class="sidenav__list">
+                <li>
+                    <a href="#">
+                        <img src=" assets/images/file_copy-24px.svg" alt=""><span>Pages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src=" assets/images/pages-24px.svg" alt=""><span>Extras</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
     </nav>
+    <div class="main__container">
+        <div class="main__container__welcome__bar">
+            <div class="main__container__welcome__bar__left">Welcome!</div>
+            <div class="main__container__welcome__bar__right">Minton/Dashbord</div>
+        </div>
+        <div class="main__container__result__bar">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    </div>
     
     
 </body>

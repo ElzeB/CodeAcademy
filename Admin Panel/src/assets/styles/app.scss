@@ -12,6 +12,7 @@ a {
 
 .nav {
     position: fixed;
+    top: 0;
     z-index: 999;
     background: #3F51B5;
     height: 70px;
@@ -98,29 +99,68 @@ a {
 
 .sidenav {
     position: fixed;
-    margin-top: 70px;
+    top: 70px;
     width: 240px;
     height: 100%;
     background-color: white;
-    font-size: 10px;
-        ul {
+    font-size: 10px; 
+        &__list {
         list-style-type: none;
         margin-left: 0;
         padding: 0 16px;
-            li a {
-            color: black;
-            }
+        
+        .active {
+        background: #f5f5f5;
+        border-left: 3px solid blue;
         }
         li a {
+        position: relative;
         display: flex;
         align-items: center;
-        margin-top: 10px;  
+        padding: 12px 20px;
+        color: black;
+            &:after {
+                content: '>';
+                right: 30px;
+                position: absolute;
+            }
+            img {
+            margin-right: 10px;
+            }
+            }
         }
-        li img {
-        margin-right: 10px;
+        .sidenav__title {
+        padding: 12px 20px;
         }
-        h {
-        margin-left: 50px;
+}
+
+.main__container {
+    background-color: lightgray;
+    height: 100%;
+    &__welcome__bar {
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        max-width: 1200px;
+        height: 40px;
+        margin-top: 70px;
+        margin-left: 240px;
+    }
+    &__result__bar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 70px;
+    top: 25px;
+    margin-left: 240px;
+        div{
+        background-color: white;
+        width: 1000px;
+        height: 70px;
+        margin: 10px;
+        text-align: center;
+        line-height: 75px;
+        }
     }
 }
 

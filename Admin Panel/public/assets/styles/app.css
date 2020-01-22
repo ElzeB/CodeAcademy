@@ -9,6 +9,7 @@ a {
 /*Horizontal Navigation Bar*/
 .nav {
   position: fixed;
+  top: 0;
   z-index: 999;
   background: #3F51B5;
   height: 70px;
@@ -78,23 +79,56 @@ a {
 /*Vertical Navigation Bar*/
 .sidenav {
   position: fixed;
-  margin-top: 70px;
+  top: 70px;
   width: 240px;
   height: 100%;
   background-color: white;
   font-size: 10px; }
-  .sidenav ul {
+  .sidenav__list {
     list-style-type: none;
     margin-left: 0;
     padding: 0 16px; }
-    .sidenav ul li a {
+    .sidenav__list .active {
+      background: #f5f5f5;
+      border-left: 3px solid blue; }
+    .sidenav__list li a {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding: 12px 20px;
       color: black; }
-  .sidenav li a {
+      .sidenav__list li a:after {
+        content: '>';
+        right: 30px;
+        position: absolute; }
+      .sidenav__list li a img {
+        margin-right: 10px; }
+  .sidenav .sidenav__title {
+    padding: 12px 20px; }
+
+.main__container {
+  background-color: lightgray;
+  height: 100%; }
+  .main__container__welcome__bar {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 10px; }
-  .sidenav li img {
-    margin-right: 10px; }
-  .sidenav h {
-    margin-left: 50px; }
+    max-width: 1200px;
+    height: 40px;
+    margin-top: 70px;
+    margin-left: 240px; }
+  .main__container__result__bar {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    height: 70px;
+    top: 25px;
+    margin-left: 240px; }
+    .main__container__result__bar div {
+      background-color: white;
+      width: 1000px;
+      height: 70px;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px; }
 
