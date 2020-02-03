@@ -14,14 +14,24 @@ module.exports = {
         use: [
           MiniCssExtractPlugin.loader,
           'css-loader',
-          'sass-loader',
+          'sass-loader'
         ],
       },
+    {
+        test: /\.(png|svg|jpg|gif)$/,
+        loader: 'file-loader',
+        options: {
+            name: '[name].[ext]',
+            publicPath: '../images',
+            outputPath: 'assets/images',
+            name: '[name].[ext]'
+            },
+        }
     ],
   },
   plugins: [
     new MiniCssExtractPlugin({
-        filename: 'app.css',
+        filename: 'assets/styles/app.css',
     }),
   ]
 };
