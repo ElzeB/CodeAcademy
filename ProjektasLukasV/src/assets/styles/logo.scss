@@ -1,0 +1,32 @@
+.logo__box {
+    width: 100%;
+    top: 30%;
+    position: absolute;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: white;
+    letter-spacing: 3px;
+    text-decoration: overline;
+    text-transform: uppercase;
+    -webkit-animation: fadein 2s ease-in-out 0s forwards;
+    // animation-delay: 1s;
+    opacity: 0;
+    &__name {
+        
+        font-size: 50px;
+    }
+        &__name__small {
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    img {
+        color: white;
+    }
+}
+
+@keyframes fadein {
+    from { opacity: 0; 
+    }
+    to   { opacity: 1; 
+    }
+}

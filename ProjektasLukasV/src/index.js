@@ -19,5 +19,36 @@ import './assets/images/cookies-background.jpg';
 import './assets/images/tiles.jpg';
 import './assets/images/wood.jpg';
 import './assets/images/couple.jpg';
+import './index.hbs';
+
+$(document).ready(function() {
+    $(window).scroll( function(){
+        $('.services__section__name, .services__section__columns__press__name, .services__section__columns__commercial__name, .services__section__columns__events__name').each( function(i){
+            
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1'},1000);
+            }
+            
+        }); 
+    });
+});
+
+$(document).ready(function() {
+    $(window).scroll( function(){
+        $('.services__section__columns__press__description, .services__section__columns__commercial__description, .services__section__columns__events__description').each( function(i){
+            
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1'},1500);
+            }
+            
+        }); 
+    });
+});
 
 
