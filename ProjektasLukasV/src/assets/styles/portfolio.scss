@@ -1,6 +1,5 @@
 .portfolio__section {
     background-color: white;
-    height: 100%;
     margin: 0px;
         &__name {
         text-align: center;
@@ -13,9 +12,8 @@
         &__gallery__box {
             display: flex;
             flex-wrap: wrap;
-            position: relative;
-            align-items: center;
             justify-content: center;
+            padding-bottom: 130px;
             div {
                 margin: 0;
                 bottom: auto;

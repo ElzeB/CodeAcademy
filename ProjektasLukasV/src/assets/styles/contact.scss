@@ -3,10 +3,11 @@
     margin: 0;
     text-align: center;
     line-height: 1.4em;
+    color: #3d3d3b;
     background-color: white;
     padding: 25px;
-    width: 55%;
-    top: 250px;
+    width: 45%;
+    top: 150px;
     left: 50%;
     transform: translate(-50%);
     &__name {
@@ -19,30 +20,56 @@
      &__box {
          display: grid;
          height: 100%;
+         margin-left: 10px;
+         padding-bottom: 50px;
          grid-template-columns: auto auto;
          &__right {
-             grid-row: 1/2;
+             grid-row: 1/3;
              grid-column: 2;
              text-align: left;
              text-align: left;
-         }
-         textarea {
-             
-         }
-         &__left1, &__left2{
-             text-align: left;
-             padding: 0 50px;
-         }
-         label {
-             display: block;
-             margin-bottom: 9px;
-             padding-right: 20px;
-             text-align: left; 
-         }
-         input {
-             padding-left: 10px;
-             width: 100%;
-         }
-     }
+                button {
+                    width: 100%;
+                    background-color: #403e39;
+                    padding: 5px;
+                    color: white;
+                }
+                label {
+                    display: block;
+                    margin: 9px 0;
+                    padding-right: 20px;
+                    text-align: left; 
+                }
+                input {
+                    padding: 3px 3px 3px 10px;
+                    width: 100%;
+                }
+                textarea {
+                    width: 100%;
+                    height: 150px;
+                }
+        }
+        &__left1{
+            text-align: left;
+            p{
+                margin: 0;
+                line-height: 1.5em;
+            }
+            &__space {
+                height: 15px;
+            }
+        }
+        &__left2 {
+            text-align: left;
 
+            &__space {
+                height: 15px;
+            }
+            p {
+            margin: 0;
+            line-height: 1.5em;
+            }
+        }
+     }
 }
+

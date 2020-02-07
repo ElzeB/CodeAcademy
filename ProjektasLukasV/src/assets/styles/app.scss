@@ -5,12 +5,22 @@
 @import 'portfolio.scss';
 @import 'about.scss';
 @import 'contact.scss';
+@import 'hover.scss';
+@import 'footer.scss';
 
 body {
     margin: 0;
     background: lightgray;
     height: 100%;
 }
+
+body::after {
+    content: '';
+    display: block;
+    height: 130px; 
+    background: #403e39;
+  }
+
 .mainPage {
     position: relative;
     margin: 0;
@@ -44,9 +54,9 @@ body {
     __portfolio {
         background-color: white;
     }
-    __contact {
+    // __contact {
         
-    }
+    // }
 }
 .pimg3 {
     background-image: url("../images/couple.jpg");
@@ -60,7 +70,7 @@ body {
 }
 .pimg4 {
     background-image: url("../images/Marble_Surface.jpg");
-    min-height: 520px;
+    min-height: 1024px;
     overflow: scroll;
     position: relative;
     background-attachment: fixed;
