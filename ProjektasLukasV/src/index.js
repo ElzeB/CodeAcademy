@@ -21,17 +21,19 @@ import './assets/images/wood.jpg';
 import './assets/images/couple.jpg';
 import './index.hbs';
 
+
+// START delay loading
+
 $(document).ready(function() {
     $(window).scroll( function(){
-        $('.services__section__name, .services__section__columns__press__name, .services__section__columns__commercial__name, .services__section__columns__events__name').each( function(i){
+        $('.services__section__name, .services__section__columns__press__name, .services__section__columns__commercial__name, .services__section__columns__events__name, .about__us__content, .contact__content').each( function(i){
             
             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
             var bottom_of_window = $(window).scrollTop() + $(window).height();
             
             if( bottom_of_window > bottom_of_element ){
                 $(this).animate({'opacity':'1'},1000);
-            }
-            
+            } 
         }); 
     });
 });
@@ -46,9 +48,55 @@ $(document).ready(function() {
             if( bottom_of_window > bottom_of_element ){
                 $(this).animate({'opacity':'1'},1500);
             }
-            
         }); 
     });
 });
 
+$(document).ready(function() {
+    $(window).scroll( function(){
+        $('.about__us__content, .contact__content').each( function(i){
+            
+            var bottom_of_element = $(this).offset().top;/* + $(this).outerHeight();*/
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            
+            if( bottom_of_window > bottom_of_element ){
+                $(this).animate({'opacity':'1'},2500);
+            } 
+        }); 
+    });
+});
 
+// END delay loading
+
+// START smooth scroling
+
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      var hash = this.hash;
+
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+
+// END smooth scroling
+
+//START Top nav responsive burger
+
+// function myFunction() {
+//     var x = document.getElementById("nav__burger");
+//     if (x.className === "nav") {
+//       x.className += " mobile";
+//     } else {
+//       x.className = "nav";
+//     }
+//   }
+
+//END Top nav responsive burger

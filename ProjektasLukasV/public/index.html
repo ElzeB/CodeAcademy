@@ -8,11 +8,31 @@
     <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link href="assets/styles/app.css" rel="stylesheet"></head>
 
 <body>
 
-        <nav class="nav">
+        <nav class="nav" id="nav__burger">
+            <div class="social__icons__container__mobile">
+                <ul class="social__icons__container__mobile__ul">
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Facebook.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Pinterest.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="assets/images/Instagram.png">
+                        </a>
+                    </li>
+                </ul>
+            </div>
             <ul>
                 <li>
                     <a href="#">home</a>
@@ -31,6 +51,11 @@
                 </li>   
                 <li>
                     <a href="#">book online</a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars fa-2x"></i>
+                    </a>
                 </li>
             </ul>
         </nav>        <div class="social__icons__container">
@@ -193,11 +218,11 @@
                     </div>
                     <div class="contact__content__box__right">
                         <label>Enter Your Name</label>
-                        <input type="text" name="name" value="Name">
+                        <input type="text" name="name" placeholder="Name">
                         <label>Enter Your Email</label>
-                        <input type="email" name="email" value="Email">
+                        <input type="email" name="email" placeholder="Email">
                         <label>Enter Your Subject</label>
-                        <input type="text" name="subject" value="Subject">
+                        <input type="text" name="subject" placeholder ="Subject">
                         <label>Enter Your Message Here</label>
                         <textarea type="text" name="Message" value="Message"></textarea>
                             <div class="contact__content__box__right__button">

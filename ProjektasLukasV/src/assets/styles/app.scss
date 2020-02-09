@@ -7,6 +7,7 @@
 @import 'contact.scss';
 @import 'hover.scss';
 @import 'footer.scss';
+@import 'media.scss';
 
 body {
     margin: 0;
@@ -38,7 +39,7 @@ body::after {
 }
 .pimg2 {
     background-image: url("../images/Marble_Surface.jpg");
-    min-height: 800px;
+    min-height: 821px;
     overflow: scroll;
     position: relative;
     background-attachment: fixed;
@@ -70,7 +71,7 @@ body::after {
 }
 .pimg4 {
     background-image: url("../images/Marble_Surface.jpg");
-    min-height: 1024px;
+    min-height: 1100px;
     overflow: scroll;
     position: relative;
     background-attachment: fixed;

@@ -20,6 +20,9 @@
   color: white;
   margin-right: 30px; }
 
+.icon {
+  display: none; }
+
 .social__icons__container {
   width: 30px;
   height: 115px;
@@ -46,6 +49,20 @@
           width: 30px;
           height: 30px;
           right: 25px; }
+  .social__icons__container__mobile {
+    display: none;
+    color: white; }
+    .social__icons__container__mobile__ul {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%; }
+      .social__icons__container__mobile__ul li {
+        height: 30px;
+        width: 30px;
+        margin-bottom: 22px;
+        margin-right: 0;
+        display: inline-block; }
 
 .logo__box {
   width: 100%;
@@ -76,12 +93,13 @@
 .services__section {
   background-color: #151112;
   color: white;
-  height: 700px; }
+  height: 821px; }
   .services__section__columns {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: space-evenly; }
+    justify-content: space-evenly;
+    padding-bottom: 20px; }
     .services__section__columns__press {
       text-align: center; }
       .services__section__columns__press__name {
@@ -161,7 +179,8 @@
   width: 45%;
   top: 150px;
   left: 50%;
-  transform: translate(-50%); }
+  transform: translate(-50%);
+  opacity: 0; }
   .about__us__content__name {
     text-decoration: overline;
     text-transform: uppercase;
@@ -190,7 +209,8 @@
   width: 45%;
   top: 150px;
   left: 50%;
-  transform: translate(-50%); }
+  transform: translate(-50%);
+  opacity: 0; }
   .contact__content__name {
     text-decoration: overline;
     text-transform: uppercase;
@@ -211,7 +231,7 @@
       .contact__content__box__right button {
         width: 100%;
         background-color: #403e39;
-        padding: 5px;
+        padding: 9px;
         color: white; }
       .contact__content__box__right label {
         display: block;
@@ -219,7 +239,7 @@
         padding-right: 20px;
         text-align: left; }
       .contact__content__box__right input {
-        padding: 3px 3px 3px 10px;
+        padding: 7px 3px 7px 10px;
         width: 100%; }
       .contact__content__box__right textarea {
         width: 100%;
@@ -308,6 +328,36 @@
   .footer p {
     padding-top: 50px; }
 
+@media screen and (max-width: 700px) {
+  .nav a {
+    display: none; }
+  .nav a.icon {
+    float: right;
+    display: block; }
+  .social__icons__container {
+    display: none; }
+  .social__icons__container__mobile {
+    float: left;
+    display: block; } }
+
+/* START responsive social icons TOP */
+@media screen and (max-width: 700px) {
+  .nav a {
+    display: none; }
+  .nav a.icon {
+    float: right;
+    display: block; } }
+
+/* END responsive social icons TOP */
+@media screen and (max-width: 600px) {
+  .about__us__content, .contact__content {
+    width: 75%; }
+  .contact__content__box {
+    grid-template-columns: auto; }
+    .contact__content__box__right {
+      grid-row: unset;
+      grid-column: 1; } }
+
 body {
   margin: 0;
   background: lightgray;
@@ -336,7 +386,7 @@ body::after {
 
 .pimg2 {
   background-image: url(../images/Marble_Surface.jpg);
-  min-height: 800px;
+  min-height: 821px;
   overflow: scroll;
   position: relative;
   background-attachment: fixed;

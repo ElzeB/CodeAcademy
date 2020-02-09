@@ -10,6 +10,7 @@
     top: 150px;
     left: 50%;
     transform: translate(-50%);
+    opacity: 0;
     &__name {
         text-decoration: overline;
         text-transform: uppercase;
@@ -31,7 +32,7 @@
                 button {
                     width: 100%;
                     background-color: #403e39;
-                    padding: 5px;
+                    padding: 9px;
                     color: white;
                 }
                 label {
@@ -41,7 +42,7 @@
                     text-align: left; 
                 }
                 input {
-                    padding: 3px 3px 3px 10px;
+                    padding: 7px 3px 7px 10px;
                     width: 100%;
                 }
                 textarea {
