@@ -10,18 +10,15 @@
   text-transform: uppercase;
   font-size: 15px;
   top: 0; }
-
-.nav ul li {
-  position: relative;
-  display: inline-block; }
-
-.nav ul li a {
-  text-decoration: none;
-  color: white;
-  margin-right: 30px; }
-
-.icon {
-  display: none; }
+  .nav__meniu__list li {
+    position: relative;
+    display: inline-block; }
+    .nav__meniu__list li a {
+      text-decoration: none;
+      color: white;
+      margin-right: 30px; }
+    .nav__meniu__list li .icon {
+      display: none; }
 
 .social__icons__container {
   width: 30px;
@@ -49,20 +46,28 @@
           width: 30px;
           height: 30px;
           right: 25px; }
-  .social__icons__container__mobile {
-    display: none;
-    color: white; }
-    .social__icons__container__mobile__ul {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%; }
-      .social__icons__container__mobile__ul li {
-        height: 30px;
-        width: 30px;
-        margin-bottom: 22px;
-        margin-right: 0;
-        display: inline-block; }
+
+.icons__mobile {
+  display: none;
+  color: white; }
+  .icons__mobile__ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%; }
+    .icons__mobile__ul li {
+      height: 30px;
+      width: 30px;
+      margin-right: 13px;
+      display: inline-block; }
+      .icons__mobile__ul li a {
+        display: block;
+        height: 100%; }
+        .icons__mobile__ul li a img {
+          width: 30px;
+          height: 30px;
+          right: 25px;
+          filter: brightness(0) invert(1); }
 
 .logo__box {
   width: 100%;
@@ -329,26 +334,36 @@
     padding-top: 50px; }
 
 @media screen and (max-width: 700px) {
-  .nav a {
+  .nav__meniu__list a {
     display: none; }
-  .nav a.icon {
+  .nav__meniu__list a.icon {
     float: right;
     display: block; }
   .social__icons__container {
     display: none; }
-  .social__icons__container__mobile {
+  .icons__mobile {
     float: left;
-    display: block; } }
+    display: flex;
+    position: absolute;
+    left: 20px;
+    align-items: center; } }
 
-/* START responsive social icons TOP */
-@media screen and (max-width: 700px) {
-  .nav a {
-    display: none; }
-  .nav a.icon {
-    float: right;
-    display: block; } }
+@media screen and (max-width: 600px) {
+  .services__section {
+    height: 100%; }
+    .services__section__columns {
+      flex-direction: column;
+      padding-bottom: 60px; }
+      .services__section__columns__press__description {
+        max-width: none;
+        margin-bottom: 20px; }
+      .services__section__columns__commercial__description {
+        max-width: none;
+        margin-bottom: 20px; }
+      .services__section__columns__events__description {
+        max-width: none;
+        margin-bottom: 20px; } }
 
-/* END responsive social icons TOP */
 @media screen and (max-width: 600px) {
   .about__us__content, .contact__content {
     width: 75%; }
@@ -413,7 +428,7 @@ body::after {
 
 .pimg4 {
   background-image: url(../images/Marble_Surface.jpg);
-  min-height: 1024px;
+  min-height: 1100px;
   overflow: scroll;
   position: relative;
   background-attachment: fixed;

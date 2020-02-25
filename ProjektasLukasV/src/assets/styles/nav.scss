@@ -10,19 +10,20 @@
     text-transform: uppercase;
     font-size: 15px;
     top: 0;
+    &__meniu__list {
+        li {
+            position: relative;
+            display: inline-block;   
+            a {
+                text-decoration: none;
+                color: white;
+                margin-right: 30px;
+            }
+            .icon {
+                display: none;
+            }
+        }
+
+    }
 }
 
-.nav ul li {
-    position: relative;
-    display: inline-block;   
-}
-
-.nav ul li a {
-    text-decoration: none;
-    color: white;
-    margin-right: 30px;
-}
-
-.icon {
-    display: none;
-}

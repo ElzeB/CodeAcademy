@@ -1,13 +1,38 @@
 @media screen and (max-width: 700px) {
-    .nav a {display: none;}
-    .nav a.icon {
+    .nav__meniu__list a {display: none;}
+    .nav__meniu__list a.icon {
       float: right;
       display: block;
     }
       .social__icons__container {display: none;}
-      .social__icons__container__mobile {
+      .icons__mobile {
       float: left;
-      display: block;
+      display: flex;
+      position: absolute;
+      left: 20px;
+      align-items: center;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .services__section {
+      height: 100%;
+      &__columns {
+        flex-direction: column;
+        padding-bottom: 60px;
+        &__press__description { 
+          max-width: none;
+          margin-bottom: 20px;
+        }
+        &__commercial__description { 
+          max-width: none;
+          margin-bottom: 20px;
+        }
+        &__events__description { 
+          max-width: none;
+          margin-bottom: 20px;
+        }
+      }
     }
   }
   
@@ -26,18 +51,6 @@
   //     text-align: center;
   //   }
   // }
-
-  /* START responsive social icons TOP */
-
-  @media screen and (max-width: 700px) {
-    .nav a {display: none;}
-    .nav a.icon {
-      float: right;
-      display: block;
-    }
-  }
-
-  /* END responsive social icons TOP */
 
   @media screen and (max-width: 600px) {
     .about__us__content, .contact__content {
