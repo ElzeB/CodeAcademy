@@ -1,0 +1,53 @@
+.item {
+    grid-row: 3;
+}
+
+.Work-experience-flex-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+h4 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 0;
+}
+
+h5 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 2px;
+}
+
+p {
+    font-family: Roboto;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.Work-Experience-ul {
+    list-style-type: disc;
+    margin: 10px 0;
+    padding: 0;
+}
+
+.Work-Experience-ul li {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 10px 0 10px 20px;
+  }

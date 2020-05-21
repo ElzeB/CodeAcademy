@@ -1,0 +1,33 @@
+
+.Contacts-flex-box {
+    grid-template-columns: auto auto auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+
+.Contact-type {
+    width: 248px;
+    height: 28px;
+    background: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.Contacts-ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.Contacts-li:active {
+    background: #7ABCAC;
+}

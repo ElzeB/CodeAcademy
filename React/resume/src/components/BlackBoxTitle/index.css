@@ -1,0 +1,14 @@
+.BlackBoxTitle {
+    width: 248px;
+    height: 28px;
+    background: #000000;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 24px;
+    line-height: 28px;
+}

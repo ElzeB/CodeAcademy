@@ -1,0 +1,6 @@
+.VerticalLine {
+    border-left: 2px solid #DCDCDC;
+    height: 248px;
+    position: absolute;
+    /* left: 32%; */
+}
