@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width">
+    <title>04.15.1</title>
+  </head>
+
+  <body>
+   
+    <script>
+        // const users = [
+        //     { id: 13, name: 'user1', banned: false },
+        //     { id: 22, name: 'user2', banned: true },
+        //     { id: 43, name: 'user3', banned: false },
+        //     { id: 14, name: 'user4', banned: true },
+        //     { id: 15, name: 'user5', banned: false }
+        // ];
+        // const usersMap =  users.reduce ((acc, curr) => {
+        //     acc[curr.id] = curr;
+        //     return acc;  
+        //     }, {});
+
+        // console.log(usersMap);
+
+        // Paverskite šį objektą į pasyvą objektų, priskirdami objekto key reikšmę to objekto id savybei
+        const usersMap = {
+            13: {
+            name: 'user1',
+            banned: false
+            }, 
+            22: {
+            name: 'userč',
+            banned: true 
+            }, 
+            43: {
+            name: 'userč',
+            banned: true 
+            }, 
+        }
+        // rezultatas:
+        // const users = [
+        //   { id: 13, name: 'user1', banned: false },
+        //   { id: 22, name: 'user2', banned: true },
+        //   { id: 43, name: 'user3', banned: false }
+        // ]
+        // patarimas, galit naudot Object.keys()  , kad gautumete gauta masyva  loop’int ar map’int (edited) 
+
+        let myArray = Object.keys(usersMap).reduce((accum, curr) => {
+            let myObj = {
+                id: curr,
+                name: usersMap[curr].name,
+                banned: usersMap[curr].banned
+            }
+            accum.push(myObj);
+            return accum;
+        }, []);
+        console.log(myArray);
+
+    </script>  
+  </body>  
+</html>

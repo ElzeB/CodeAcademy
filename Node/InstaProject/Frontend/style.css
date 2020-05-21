@@ -1,0 +1,175 @@
+body {
+  background-color: #fafafa;
+  margin: 0;
+}
+body .navbar {
+  background-color: #ffffff;
+}
+body .navbar .container .row {
+  width: 100%;
+}
+body .navbar input {
+  font-size: 12px;
+  background-color: #fafafa;
+  margin: 0;
+  padding: 5px;
+  border: solid 1px rgba(var(--b6a, 219, 219, 219), 1);
+  min-width: 125px;
+  width: 215px;
+}
+body .profilePicture {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+}
+
+body {
+  margin: 0;
+}
+body .homeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: #fafafa;
+}
+body .homeContainer form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px grey;
+  background-color: white;
+  padding: 3% 5%;
+  max-width: 350px;
+  width: 100%;
+  margin-top: 12px;
+}
+body .homeContainer form button {
+  width: 100%;
+  margin-bottom: 12px;
+  background-color: #2F95F6;
+  font-weight: 600;
+  font-size: 14px;
+}
+body .homeContainer form input {
+  background-color: #fafafa;
+  font-size: 12px;
+  height: 36px;
+  padding: 10px;
+}
+body .homeContainer form .form-group {
+  width: 100%;
+}
+body .homeContainer form .terms {
+  width: 100%;
+  font-size: 12px;
+  line-height: 16px;
+  margin: 10px 40px;
+  text-align: center;
+}
+body .homeContainer form .invitationText {
+  color: rgba(var(--f52, 142, 142, 142), 1);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0 40px 10px;
+  text-align: center;
+  margin: 0 0 10px;
+}
+body .homeContainer form .separationLine {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin: 10px 40px 18px;
+}
+body .homeContainer form .separationLine .s311c {
+  height: 1px;
+  position: relative;
+  top: 0.45em;
+  background-color: rgba(var(--b38, 219, 219, 219), 1);
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+body .homeContainer form .separationLine .separationWord {
+  flex-shrink: 0;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15px;
+  margin: 0 18px;
+  text-transform: uppercase;
+}
+body .homeContainer form a {
+  color: #3b5998;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  margin-top: 12px;
+}
+body .homeContainer .LogInwindow {
+  margin: 15px;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dee2e6;
+  font-size: 14px;
+  background-color: white;
+  max-width: 350px;
+  width: 100%;
+  border-radius: 1px;
+  padding: 10px 0;
+}
+body .homeContainer .LogInwindow span {
+  font-size: 14px;
+  margin: 15px;
+}
+body .homeContainer .appIconsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 44px;
+}
+body .homeContainer .appIconsContainer span {
+  color: rgba(var(--i1d, 38, 38, 38), 1);
+  font-size: 14px;
+  line-height: 18px;
+  margin: 10px 20px 20px 20px;
+  text-align: center;
+}
+body .homeContainer .appIcons {
+  height: 40px;
+}
+body .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: red;
+  color: white;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid grey;
+}
+body .footer .UseTheApp {
+  height: 40px;
+  color: rgba(var(--d69, 0, 149, 246), 1);
+}
+body .footer .createPost {
+  border-top: 1px solid grey;
+  margin: 0;
+  height: 40px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .footer img {
+  width: 30px;
+  height: 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

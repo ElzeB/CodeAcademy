@@ -1,0 +1,158 @@
+@import "./userAccount.scss";
+
+
+body {
+    margin: 0;
+//STAR - Register
+    .homeContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background-color: #fafafa;
+
+        form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border: 1px grey;
+        background-color: white;
+        padding: 3% 5%;
+        max-width: 350px;
+        width: 100%;
+        margin-top: 12px;
+
+            button {
+                width:100%;
+                margin-bottom: 12px;
+                background-color: #2F95F6;
+                font-weight: 600;
+                font-size: 14px;
+            }
+
+            input {
+                background-color: #fafafa;
+                font-size: 12px;
+                height: 36px;
+                padding: 10px;
+            }
+            .form-group {
+                width: 100%;
+            }
+            .terms {
+                width: 100%;
+                font-size: 12px;
+                line-height: 16px;
+                margin: 10px 40px;
+                text-align: center;
+            }
+            .invitationText {
+                color: rgba(var(--f52,142,142,142),1);
+                font-size: 17px;
+                font-weight: 600;
+                line-height: 20px;
+                margin: 0 40px 10px;
+                text-align: center;
+                margin: 0 0 10px;
+            }
+            .separationLine {
+                display: flex;
+                flex-direction: row;
+                width:100%;
+                margin: 10px 40px 18px;
+                .s311c {
+                    height: 1px;
+                    position: relative;
+                    top: .45em;
+                    background-color: rgba(var(--b38,219,219,219),1);
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                }
+                .separationWord {
+                    flex-shrink: 0;
+                    font-size: 13px;
+                    font-weight: 600;
+                    line-height: 15px;
+                    margin: 0 18px;
+                    text-transform: uppercase;
+                }
+            }
+            a {
+                color: #3b5998;
+                font-size: 14px;
+                line-height: 18px;
+                font-weight: 600;
+                margin-top: 12px;
+            }
+        }
+        .LogInwindow {
+            margin: 15px;
+            height: 8vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #dee2e6;
+            font-size: 14px;
+            background-color: white;
+            max-width: 350px;
+            width: 100%;
+            border-radius: 1px;
+            padding: 10px 0;
+            span {
+                font-size: 14px;
+                margin: 15px;
+            }
+        }
+        .appIconsContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding-bottom: 44px;
+            span {
+                color: rgba(var(--i1d,38,38,38),1);
+                font-size: 14px;
+                line-height: 18px;
+                margin: 10px 20px 20px 20px;
+                text-align: center;
+            }
+        }
+        .appIcons {
+            height: 40px;
+        }
+    }
+
+    .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: red;
+        color: white;
+        text-align: center;
+        background-color: #fff;
+        border: 1px solid grey;
+        .UseTheApp {
+            height: 40px;
+            color:rgba(var(--d69,0,149,246),1);
+        }
+        .createPost {
+            border-top: 1px solid grey;
+            margin: 0;
+            height: 40px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+//END - Register

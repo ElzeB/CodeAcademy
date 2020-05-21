@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2020-03-25 Užduotis Nr. 3</title>
+  </head>
+​
+  <body>
+
+    <script>
+
+        function showRequestAlert() {
+            let getAge = prompt('Sveiki. Įveskite savo amžių');
+    
+            if (getAge >= 18) {
+                let allowMessageLine = document.createElement("h2");
+                let textAllow = document.createTextNode("Sveikas atvykęs į vakarėlį!");
+                messageLine.appendChild(textAllow);
+                document.body.appendChild(messageLine);
+            } else {
+                let denyMessageLine = document.createElement("h2");
+                let textDeny = document.createTextNode("Deja Jums negalima!");
+                denyMessageLine.appendChild(textDeny);
+                document.body.appendChild(denyMessageLine);
+            }
+        }
+        setTimeout(showRequestAlert,3000);
+    
+    </script>
+
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

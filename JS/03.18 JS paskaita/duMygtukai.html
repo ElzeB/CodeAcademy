@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>03.18 paskaita</title>
+</head>
+<body>
+    
+    <input type="button" id="hider1" value="Nematomas" />
+    <input type="button" id="hider2" value="Matomas" />
+    <div id="text">Tekstas</div>
+
+    <script>
+
+        let button1 = document.getElementById("hider1");
+        let button2 = document.getElementById("hider2");
+        let text = document.getElementById("text");
+      
+        button1.addEventListener("click", () => {
+            text.style.display = "none"; 
+            });
+
+        button2.addEventListener("click", () => {
+            text.style.display = ""; 
+            });
+
+    
+    </script>
+
+
+
+
+</body>
+</html>

@@ -21,7 +21,6 @@ import './assets/images/wood.jpg';
 import './assets/images/couple.jpg';
 import './index.hbs';
 
-
 // START delay loading
 
 $(document).ready(function() {
@@ -90,13 +89,15 @@ $(document).ready(function(){
 
 //START Top nav responsive burger
 
-// function myFunction() {
-//     var x = document.getElementById("nav__burger");
-//     if (x.className === "nav") {
-//       x.className += " mobile";
-//     } else {
-//       x.className = "nav";
-//     }
-//   }
+// var menuToggle = document.querySelector("#menu__toggle");
+// var activeElements = document.querySelectorAll(".active__element");
+// var toggledMenu = menuToggle.addEventListener("click", function(){
+
+//      for(var activated = 0; activated < activeElements.length; activated++){
+//           activeElements[activated].classList.toggle("active");
+//      }
+// })   
+
+
 
 //END Top nav responsive burger

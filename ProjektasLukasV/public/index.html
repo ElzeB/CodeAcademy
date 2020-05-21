@@ -9,11 +9,17 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction() {
+    var element = document.getElementsByClassName("nav__meniu__list");
+    element.classList.toggle("nav__meniu__list__active");
+ }
+    </script>
 <link href="assets/styles/app.css" rel="stylesheet"></head>
 
 <body>
 
-        <nav class="nav" id="nav__burger">
+        <nav class="nav">
             <div class="icons__mobile">
                 <ul class="icons__mobile__ul">
                     <li>
@@ -33,31 +39,33 @@
                     </li>
                 </ul>
             </div>
-            <ul class="nav__meniu__list">
-                <li>
-                    <a href="#">home</a>
-                </li>           
-                <li>
-                    <a href="#services__section">services</a>
-                </li>         
-                <li>
-                    <a href="#portfolio__section">portfolio</a>
-                </li>           
-                <li>
-                    <a href="#about__us__content">about us</a>
-                </li>          
-                <li>
-                    <a href="#contact__content">contact</a>
-                </li>   
-                <li>
-                    <a href="#">book online</a>
-                </li>
-                <li>
-                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                        <i class="fa fa-bars fa-2x"></i>
-                    </a>
-                </li>
-            </ul>
+            <div class="nav__meniu__list active__element">
+                <ul>
+                    <li>
+                        <a href="#">home</a>
+                    </li>           
+                    <li>
+                        <a href="#services__section">services</a>
+                    </li>         
+                    <li>
+                        <a href="#portfolio__section">portfolio</a>
+                    </li>           
+                    <li>
+                        <a href="#about__us__content">about us</a>
+                    </li>          
+                    <li>
+                        <a href="#contact__content">contact</a>
+                    </li>   
+                    <li>
+                        <a href="#">book online</a>
+                    </li>
+                    <li>
+                        <a class="icon">
+                            <i id="menu__toggle" class="fa fa-bars fa-2x menu__toggle active__element" onclick="myFunction() "></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>        <div class="social__icons__container">
             <ul class="social__icons__container__ul">
                 <li>
@@ -77,7 +85,7 @@
                 </li>
             </ul>
         </div>
-    <div class="mainPage">
+    <div class="mainPage active-element">
         <div class="pimg1">
             <div class="logo__box">
                 <div><img src="assets/images/logoresized.png"></div>
@@ -234,12 +242,12 @@
                 </div>
             </div>
         </div>
-    </div> 
+    
 
     <footer class="footer">
         <p>&copy; 2023 by Jade &amp; Andy. Proudly created with Wix.com</p>
     </footer>
-
+</div> 
     <script src="index.js"></script>
 <script type="text/javascript" src="main.js"></script></body>
 </html>

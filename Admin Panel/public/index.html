@@ -6,132 +6,270 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+<link href="assets/styles/app.css" rel="stylesheet"><link href="assets/styles/profile.css" rel="stylesheet"></head>
 
 <body class="body">
-    <nav class="nav">
-        <div class="nav__left">
-            <a href="#">
-                <img src=" assets/images/logo.svg" alt="Meniu">
-                <span>MINTON</span>
-            </a>
-        </div>
-        <div class="nav__right">
-            <div class="nav__right__menu">
-                <img src=" assets/images/menu-24px.svg" alt="Meniu">
-                <div class="search-wrapper">
-                    <input type="text" name="searchBox" value="Search...">
-                    <a href="#">
-                        <img src=" assets/images/search-24px.svg">
-                    </a>
+     <nav data-sidenav class="nav sidenav-hide">
+            <div class="nav__left">
+                <a href="home.html">
+                    <img src="assets/images/logo.svg" alt="Menu">
+                    <span>MINTON</span>
+                </a>
+            </div>
+            <div class="nav__right">
+                <div class="nav__right__menu">
+                        <img data-toggle="sidenav" src=" assets/images/menu-24px.svg" alt="Meniu">
+                    <div class="search-wrapper">
+                        <input type="text" name="searchBox" value="Search...">
+                        <a href="#">
+                            <img src=" assets/images/search-24px.svg">
+                        </a>
+                    </div>
+                </div>
+                <div class="nav__right__list">
+                    <ul>
+                        <li>
+                            <a href="#"><img src=" assets/images/crop_free-24px.svg" alt="Meniu"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src=" assets/images/more_horiz-24px.svg" alt="Meniu"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img src=" assets/images/notifications-24px.svg" alt="Meniu"></a>
+                        </li>
+                        <li>
+                            <a href="#"><img class="portret__photo" src=" assets/images/portret.jpg" alt="Meniu"></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="nav__right__list">
-                <ul>
-                    <li>
-                        <a href="#"><img src=" assets/images/crop_free-24px.svg" alt="Meniu"></a>
+        </nav>        <nav data-sidenav class="sidenav sidenav-hide">
+            <div class="sidenav-divider">
+                <h5 class="sidenav__title">Main</h5>
+                <ul class="sidenav__list">
+                    <li class="active">
+                        <a href="profile.html">
+                            <img src=" assets/images/home-24px.svg" alt="Dashboard"><span>Dashboard</span>
+                        </a> 
                     </li>
                     <li>
-                        <a href="#"><img src=" assets/images/more_horiz-24px.svg" alt="Meniu"></a>
+                        <a href="#">
+                            <img src=" assets/images/colorize-24px.svg" alt="Dashboard"><span>UI Kit</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="#"><img src=" assets/images/notifications-24px.svg" alt="Meniu"></a>
+                        <a href="#">
+                            <img src=" assets/images/all_inclusive-24px.svg" alt="Dashboard"><span>Typography</span>
+                        </a>
                     </li>
                     <li>
-                        <a href="#"><img class="portret__photo" src=" assets/images/portret.jpg" alt="Meniu"></a>
+                        <a href="#">
+                            <img src=" assets/images/emoji_objects-24px.svg" alt="Dashboard"><span>Components</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src=" assets/images/fireplace-24px.svg" alt="Dashboard"><span>Icons</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src=" assets/images/create-24px.svg" alt="Dashboard"><span>Forms</span>
+                        </a>
+                    </li>
+                </ul>
+                <h5 class="sidenav__title">More</h5>
+                <ul class="sidenav__list">
+                    <li>
+                        <a href="#">
+                            <img src=" assets/images/format_list_bulleted-24px.svg" alt=""><span>Tables</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src=" assets/images/show_chart-24px.svg" alt=""><span>Charts</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src=" assets/images/map-24px.svg" alt=""><span>Maps</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src=" assets/images/email-24px.svg" alt=""><span>Mail</span>
+                        </a>
+                    </li>
+                </ul>
+                <h5 class="sidenav__title">Extras</h5>
+                <ul class="sidenav__list">
+                    <li>
+                        <a href="#">
+                            <img src=" assets/images/file_copy-24px.svg" alt=""><span>Pages</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src=" assets/images/pages-24px.svg" alt=""><span>Extras</span>
+                        </a>
                     </li>
                 </ul>
             </div>
+        </nav>    
+<article data-sidenav class="sidenav-hide">
+    <div class="container">
+        <div class="container__welcome__bar">
+            <div class="container__welcome__bar__left">Welcome !</div>
+            <div class="container__welcome__bar__right">
+                <ul>
+                    <li><a href="#">Minton</a></li>
+                    <li>Dashbord</li> 
+                </ul>
+            </div>
         </div>
-    </nav>
-    
-    <nav class="sidenav">
-        <div class="sidenav-divider">
-            <h5 class="sidenav__title">Main</h5>
-            <ul class="sidenav__list">
-                <li class="active">
-                    <a href="#">
-                        <img src=" assets/images/home-24px.svg" alt="Dashboard"><span>Dashboard</span>
-                    </a> 
-                </li>
-                <li>
-                    <a href="#">
-                        <img src=" assets/images/colorize-24px.svg" alt="Dashboard"><span>UI Kit</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src=" assets/images/all_inclusive-24px.svg" alt="Dashboard"><span>Typography</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src=" assets/images/emoji_objects-24px.svg" alt="Dashboard"><span>Components</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src=" assets/images/fireplace-24px.svg" alt="Dashboard"><span>Icons</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src=" assets/images/create-24px.svg" alt="Dashboard"><span>Forms</span>
-                    </a>
-                </li>
-            </ul>
-            <h5 class="sidenav__title">More</h5>
-            <ul class="sidenav__list">
-                <li>
-                    <a href="#">
-                        <img src=" assets/images/format_list_bulleted-24px.svg" alt=""><span>Tables</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src=" assets/images/show_chart-24px.svg" alt=""><span>Charts</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src=" assets/images/map-24px.svg" alt=""><span>Maps</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src=" assets/images/email-24px.svg" alt=""><span>Mail</span>
-                    </a>
-                </li>
-            </ul>
-            <h5 class="sidenav__title">Extras</h5>
-            <ul class="sidenav__list">
-                <li>
-                    <a href="#">
-                        <img src=" assets/images/file_copy-24px.svg" alt=""><span>Pages</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src=" assets/images/pages-24px.svg" alt=""><span>Extras</span>
-                    </a>
-                </li>
-            </ul>
+        <div class="container__result__bar">
+            <div class="container__result__bar__box">
+                <img src="assets/images/green.jpg">
+                <div class="container__result__bar__box__ID">
+                    <div class="container__result__bar__box__number">64,570</div>
+                    <div class="container__result__bar__box__name">  Today's Visits</div>
+                </div>
+            </div>
+            <div class="container__result__bar__box">
+                <img src="assets/images/blue.jpg">
+                <div class="container__result__bar__box__ID">
+                    <div class="container__result__bar__box__number">31,570</div>
+                    <div class="container__result__bar__box__name">Total Revenue</div>
+                </div>
+            </div>
+            <div class="container__result__bar__box">
+                <img src="assets/images/red.jpg">
+                <div class="container__result__bar__box__ID">
+                    <div class="container__result__bar__box__number">280</div> 
+                    <div class="container__result__bar__box__name">Today's Sales</div>
+                </div>
+            </div>
+            <div class="container__result__bar__box">
+                <img src="assets/images/purple.jpg">
+                <div class="container__result__bar__box__ID">
+                    <div class="container__result__bar__box__number">0.16%</div>
+                    <div class="container__result__bar__box__name">Conversion</div>
+                </div>
+            </div>
         </div>
-    </nav>
-    <div class="main__container">
-        <div class="main__container__welcome__bar">
-            <div class="main__container__welcome__bar__left">Welcome!</div>
-            <div class="main__container__welcome__bar__right">Minton/Dashbord</div>
+        <div class="container__result__columns__box">
+            <div class="container__result__columns__box__column"><span>YEARLY SALES REPORT</span></div>
+            <div class="container__result__columns__box__column"><span>TOTAL REVENUE</span></div>
+            <div class="container__result__columns__box__column"><span>TOTAL REVENUE</span></div>
         </div>
-        <div class="main__container__result__bar">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
+        <div class="container__last__box">
+            <div class="container__last__box__projects">
+                <div class="container__last__box__name">latest projects</div>
+                <div>Your awsome best goes here</div>
+                <table class="container__last__box__projects__table">
+                    <tr>
+                        <th>#</th>
+                        <th>Project Name</th>
+                        <th>Start Date</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                        <th>Assign</th> 
+                    </tr>  
+                    <tr>
+                        <td>1</td> 
+                        <td>Minton Admin v1</td>
+                        <td>01/01/2016</td>
+                        <td>26/04/2016</td>
+                        <td>Pending</td>
+                        <td>Code Barmen</td>
+                    </tr>                   
+                    <tr>
+                        <td>2</td> 
+                        <td>Minton Frontend v1</td>
+                        <td>01/01/2016</td>
+                        <td>26/04/2016</td>
+                        <td>Pending</td>
+                        <td>Minton Admin</td>
+                    </tr>
+                    <tr>
+                        <td>3</td> 
+                        <td>Minton Admin v1.1</td>
+                        <td>01/05/2016</td>
+                        <td>10/05/2016</td>
+                        <td>Pending</td>
+                        <td>Code Barmen</td>
+                    </tr>
+                    <tr>
+                        <td>4</td> 
+                        <td>Minton Frontend v1.1</td>
+                        <td>01/01/2016</td>
+                        <td>31/05/2016</td>
+                        <td>Work in progress</td>
+                        <td>Minton Admin</td>
+                    </tr>
+                    <tr>
+                        <td>5</td> 
+                        <td>Minton Admin v1.3</td>
+                        <td>01/01/2016</td>
+                        <td>31/05/2016</td>
+                        <td>Comming soon</td>
+                        <td>Code Barmen</td>
+                    </tr>  
+                </table>
+            </div>
+            <div class="container__last__box__members">
+                <div class="container__last__box__members__1">
+                    <img class="portret__photo" src="assets/images/portret.jpg">
+                    <div class="container__last__box__members__1__info">
+                        <div class="container__last__box__members__1__name">
+                            Chadengle
+                        </div>
+                        <div class="container__last__box__members__1__email">
+                            chadengle@gmail.com
+                        </div>
+                        <div class="container__last__box__members__1__level1">
+                            Admin
+                        </div>
+                    </div>
+                </div>                
+                <div class="container__last__box__members__1">
+                    <img class="portret__photo" src="assets/images/portret.jpg">
+                    <div class="container__last__box__members__1__info">
+                        <div class="container__last__box__members__1__name">
+                            Tomasiau
+                        </div>
+                        <div class="container__last__box__members__1__email">
+                            tomasiau@gmail.com
+                        </div>
+                        <div class="container__last__box__members__1__level2">
+                            User
+                        </div>
+                    </div>
+                </div>               
+                <div class="container__last__box__members__1">
+                    <img class="portret__photo" src="assets/images/portret.jpg">
+                    <div class="container__last__box__members__1__info">
+                        <div class="container__last__box__members__1__name">
+                            Ok
+                        </div>
+                        <div class="container__last__box__members__1__email">
+                            ok@gmail.com
+                        </div>
+                        <div class="container__last__box__members__1__level3">
+                            Admin
+                        </div>
+                    </div>
+                </div>
+            </div> 
         </div>
     </div>
-    
-    
-</body>
+    <div class="footer">
+        <ul class="footer__ul">
+            <li>2017</li>
+            <li>&#169;</li>
+            <li>Minton</li>
+        </ul>
+    </div></article>
+<script type="text/javascript" src="main.js"></script></body>
 </html>

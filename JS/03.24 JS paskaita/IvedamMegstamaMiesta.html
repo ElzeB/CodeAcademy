@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2020-03-23 Užduotis Nr. 2</title>
+    <style>
+      .list-item {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Mėgstamiausi miestai:</h2>
+​
+    <ol class="list" id="list">
+      <li>Vilnius</li>
+      <li>Kaunas</li>
+      <li>Palanga</li>
+      <li>Klaipėda</li>
+      <li>Marijampolė</li>
+    </ol>
+
+    <form>
+      <div class="form-group">
+        <label for="city">Įveskite miestą:</label>
+        <input type="text" id="city" />
+        <input type="submit" value="Pridėti" />
+        <span type="text" id="warningWhenDouble"></span>
+      </div>
+    </form>
+​  
+   <script>
+     
+      let form = document.querySelector('form');
+      let input = document.querySelector('#city');
+      let ol = document.querySelector('ol');
+      let cityListArray = Array.from(document.querySelectorAll('li'));
+      
+      let city = cityListArray.forEach(e => {
+          return e;
+          
+          
+      });
+      console.log(cityListArray);
+      form.addEventListener('submit', e => {
+     
+
+          if (input.value === city) {
+            alert("Toks miestas jau ivestas");
+          } else {
+            let li = document.createElement('li');
+            let text = document.createTextNode(input.value);
+            li.appendChild(text);
+            ol.appendChild(li);
+          }
+      });
+
+  </script>
+  </body>
+</html>
+
+
+

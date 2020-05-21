@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+    #container {
+    display: flex;
+    justify-content: center;
+    }
+    #box {
+    width: 150px;
+    height: 150px;
+    background: salmon;
+    }
+    #btns {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    }
+    .btn {
+    margin: 10px;
+    display: inline-block;
+    padding: 7px 15px;
+    background: #F4F4F4;
+    }
+    </style>
+    <title>03.18 paskaita</title>
+</head>
+<body>
+  
+<div id="container">
+    <div id="box"></div>
+</div>
+    <div id="btns">
+    <div class="btn" id="btn1">Padidinti dydį</div>
+    <div class="btn" id="btn2">Pakeisti foną</div>
+    <div class="btn" id="btn3">Plėsti į šoną</div>
+</div>
+    
+
+    <script>
+        let changeSize = document.getElementById("btn1");
+        let changeFont = document.getElementById("btn2");
+        let changePosition = document.getElementById("btn3");
+        let box = document.getElementById("box");
+    
+        changeSize.addEventListener("click", ()=> {
+            box.style.width = "300px";
+            box.style.height = "300px";
+            box.style.transition = "2s"
+        });
+
+        changeFont.addEventListener("click", ()=> {
+            box.style.backgroundColor = "pink";
+            
+        });
+
+        changePosition.addEventListener("click", ()=> {
+            box.style.width = "600px";
+            
+        });
+
+    </script>
+
+
+
+
+</body>
+</html>

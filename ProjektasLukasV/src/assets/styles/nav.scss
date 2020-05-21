@@ -23,7 +23,56 @@
                 display: none;
             }
         }
-
     }
 }
+.nav__meniu__list.active::before,
+.nav__meniu__list.active::after{
+    width: 25vw;
+}
 
+.nav__meniu__list::before,
+.nav__meniu__list::after{
+    background-color:#b94071;
+    content:"";
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 0vw;
+    transition: all 100ms ease-in-out 300ms;
+}
+
+.nav__meniu__list::before{
+    left: 0;
+}
+.nav__meniu__list::after{
+    right: 0;
+}
+.menu__toggle{
+    cursor: pointer;
+    z-index: 3;
+}
+.nav__meniu__list__active {
+    opacity: 1;
+
+}
+.nav__meniu__list__active ul{
+    position: absolute;
+    margin-top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    z-index: 2000;
+    list-style-type: none;
+}
+.nav__meniu__list__active a {
+    display: block;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    margin-bottom: 15px;
+    opacity: 1;
+    text-align: center;
+    text-transform: uppercase;
+    transition-delay: 130ms;
+    text-decoration: none;
+}

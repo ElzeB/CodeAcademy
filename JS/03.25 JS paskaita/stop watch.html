@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2020-03-25 Užduotis Nr. 2</title>
+  </head>
+  <style>
+    .container {
+      margin: 100px;
+      padding: 25px 25px;
+​
+      background-color: salmon;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    #stopwatch {
+      margin-bottom: 15px;
+      padding: 5px 17px;
+      background: #f4f4f4;
+      font-size: 2.5em;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <div id="stopwatch">0</div>
+      <div id="buttons">
+        <button id="start">Pradėti</button>
+        <button id="stop">Sustabdyti</button>
+      </div>
+      <div id="results">
+        <p>Rezultatai:</p>
+        <ol>
+          <li></li>
+        </ol>
+      </div>
+    </div>
+    <script>
+
+      let startButton = document.querySelector('#start');
+      let stopButton = document.querySelector('#stop');
+      let numberDisplay = document.querySelector('#stopwatch');
+      let resultOl = document.querySelector('ol');
+      let interval;
+      let num = 0;
+
+      startButton.addEventListener('click', () => {
+        interval = setInterval(() => {
+          numberDisplay.innerHTML = ++num;
+        }, 1000);
+      });
+      
+      stopButton.addEventListener('click', () => {
+        clearInterval(interval);
+        let li = document.createElement('li');
+        let timeElapsed = document.createTextNode(num);
+        li.appendChild(timeElapsed);
+        resultOl.appendChild(li);
+        numberDisplay.innerHTML = 0;
+      });
+
+    </script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+

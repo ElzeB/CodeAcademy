@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles/profile.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+    <script defer src="../assets/styles/all.js"> </script>
+</head>
+<body>
+
+        {{> ../partials/nav }}
+        {{> ../partials/sidenav }}
+       
+
+<article data-sidenav class="sidenav-hide">
+    <div class="main__page">
+
+        <div class="main__page__profile__bar">
+            <div class="main__page__profile__bar__left">Profile</div>
+            <div class="main__page__profile__bar__right">
+                <ul>
+                    <li><a href="#">Minton</a></li>
+                    <li>Extras</li> 
+                    <li>Profile</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4 pl-3 pr-2">
+                <div class="card-box text-center">
+                    <img class="profile__photo rounded-circle avatar-xl img-thumbnail" src="assets/images/portret.jpg">
+                    <h6 class="name mt-1 mb-1">Ella McKnight</h6>
+                    <p class="text-muted mt-1 mb-4">&commat;webdesigner</p>
+                    <button type="button" class="btn btn-success btn-xs waves-effect mb-2 waves-light">Follow</button>
+                    <button type="button" class="btn btn-danger btn-xs waves-effect mb-2 waves-light">Message</button>
+                    <div class="text-left mt-3">
+                        <p class="text-muted mt-3 mb-3">
+                            <strong>Full Name:</strong>
+                            <span class="ml-2">Ella Mcknight</span>
+                        </p>
+                        <p class="text-muted mt-3 mb-3">
+                            <strong>Mobile:</strong>
+                            <span class="ml-2">(123) 123 1234</span>
+                        </p>
+                        <p class="text-muted mt-3 mb-3">
+                            <strong>Email:</strong>
+                            <span class="ml-2">codertherms@gmail.com</span>
+                        </p>
+                        <p class="text-muted mt-3 mb-3">
+                            <strong>Location:</strong>
+                            <span class="ml-2">USA</span>
+                        </p>
+                    </div>
+                    <ul class="inline-list mt-3 mb-0">
+                        <li class="list-inline-item">
+                            <i class="fab fa-facebook"></i>
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fab fa-twitter-square"></i>
+                        </li>
+                        <li class="list-inline-item">
+                            <i class="fab fa-skype"></i>
+                        </li>
+                    </ul>
+                </div>
+    <div class="card-box">
+        <h6 class="header-title text-uppercase"> skills </h6>
+        <div class="pt-1  mt-3 mb-3">
+            <h6 class="text-uppercase mt-0 mb-2 text-muted ">html5</h6>
+            <div class="progress" style="height: 2px;">
+                <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <div class="pt-1  mt-3 mb-3">
+            <h6 class="text-uppercase mt-0 mb-2 text-muted ">php</h6>
+            <div class="progress" style="height: 3px;">
+                <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+        <div class="pt-1  mt-3 mb-3">
+            <h6 class="mt-0 mb-2 text-muted ">Wordpress</h6>
+            <div class="progress" style="height: 2px;">
+                <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="col-lg-8">
+                <div class="card-box text-muted">
+                    <div class="navbar ">
+                        <div class="navbar__hover">
+                            <a class="nav-item nav-link active text-uppercase" href="">about me</a>
+                        </div>
+                        <div class="navbar__hover">
+                            <a class="nav-item nav-link text-uppercase" href="">gallery</a>
+                        </div>
+                        <div class="navbar__hover">
+                            <a class="nav-item nav-link text-uppercase" href="">settings</a>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="about__me" id="about__me">
+                        <p class="text-left text-muted mt-2">
+                            Pariatur cupidatat proident cillum id enim est non. Dolore ea officia quis dolor nostrud cillum do. Incididunt nisi adipisicing consequat enim irure enim voluptate anim. Est ipsum excepteur laboris elit dolor magna ad sit deserunt non. Velit eu exercitation et dolor ut Lorem nostrud excepteur aliquip ullamco in aliquip Lorem fugiat. Lorem nostrud excepteur aliquip ullamco in aliquip Lorem fugiat.
+                        </p>
+                        <strong mt-2">Experience</strong>
+                        <h6 class="strong mt-2">Lead designer/Developer</h6>
+                        <p class="text-muted">websitename.com</p>
+                        <strong mt-2"> 2010-2015</strong>
+                        <p class="text-left text-muted mt-4">
+                            Pariatur cupidatat proident cillum id enim est non. Dolore ea officia quis dolor nostrud cillum do. Incididunt nisi adipisicing consequat enim irure enim voluptate anim. Est ipsum excepteur laboris elit dolor magna ad sit deserunt non. Velit eu exercitation et dolor ut Lorem nostrud.
+                        </p>
+                        <hr>
+                        <h6 class="strong mt-2">Senior Graphic Designer</h6>
+                        <p class="text-muted">coderthemes.com</p>
+                        <strong mt-2> 2010-2015</strong>
+                        <p class="text-left text-muted mt-4">
+                            Pariatur cupidatat proident cillum id enim est non. Dolore ea officia quis dolor nostrud cillum do. Incididunt nisi adipisicing consequat enim irure enim voluptate anim. Est ipsum excepteur laboris elit dolor magna ad sit deserunt non. Velit eu exercitation et dolor ut Lorem nostrud.
+                        </p>
+                    </div>
+                    <div class="gallery row" id="gallery">
+                        <div class="row">
+                                <div class="col col-4 text-center">
+                                    <img src="assets/images/ap1.jpg">
+                                </div>
+                                <div class="col col-4 text-center">
+                                    <img src="assets/images/ap1.jpg">
+                                </div>
+                                <div class="col col-4 text-center">
+                                    <img src="assets/images/ap1.jpg">
+                                </div>
+                        </div>
+                         <div class="row">
+                                <div class="col col-4 text-center">
+                                    <img src="assets/images/ap1.jpg">
+                                </div>
+                                <div class="col col-4 text-center">
+                                    <img src="assets/images/ap1.jpg">
+                                </div>
+                                <div class="col col-4 text-center">
+                                    <img src="assets/images/ap1.jpg">
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+             {{> ../partials/footer }}
+    </div>
+</article>
+
+</body>
+</html>
+

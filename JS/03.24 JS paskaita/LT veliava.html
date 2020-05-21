@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2020-03-23 Užduotis Nr. 3</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      #flag {
+        margin: 150px auto;
+        width: 450px;
+        height: 300px;
+        box-shadow: 0px 10px 15px #ddd;
+      }
+
+      .flag-color {
+        width: 450px;
+        height: 100px;
+      }
+      #yellow {
+        background-color: #f4f4f4;
+      }
+      #green {
+        background-color: #e8e8e8;
+      }
+      #red {
+        background-color: #e1e1e1;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="flag">
+      <div class="flag-color" id="yellow"></div>
+      <div class="flag-color" id="green"></div>
+      <div class="flag-color" id="red"></div>
+    </div>
+    <script>
+      // Padarykite, kad paspaudus ant atitinkamos spalvos
+      // vietos (bloko), tą vieta nusidažys Lietuvos vėliavos
+      // spalva (spavas būtina paimti iš coolors masyvo).
+
+      // Naudokite šias spalvas
+
+      let yellow = document.querySelector("#yellow");
+      let green = document.querySelector("#green");
+      let red = document.querySelector("#red");
+
+      yellow.addEventListener("click", () => {
+        yellow.style.backgroundColor = colors[0];
+      });
+      green.addEventListener("click", () => {
+        green.style.backgroundColor = colors[1];
+      });
+      red.addEventListener("click", () => {
+        red.style.backgroundColor = colors[2];
+      });
+
+      const colors = ['yellow', 'green', 'red'];
+    </script>
+  </body>
+</html>

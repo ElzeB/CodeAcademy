@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="assets/styles/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    {{> partials/nav }}
+    {{> partials/sidenav }}
+    
+<article data-sidenav class="sidenav-hide">
+    <div class="container">
+        <div class="container__welcome__bar">
+            <div class="container__welcome__bar__left">Welcome !</div>
+            <div class="container__welcome__bar__right">
+                <ul>
+                    <li><a href="#">Minton</a></li>
+                    <li>Dashbord</li> 
+                </ul>
+            </div>
+        </div>
+        <div class="container__result__bar">
+            <div class="container__result__bar__box">
+                <img src="assets/images/green.jpg">
+                <div class="container__result__bar__box__ID">
+                    <div class="container__result__bar__box__number">64,570</div>
+                    <div class="container__result__bar__box__name">  Today's Visits</div>
+                </div>
+            </div>
+            <div class="container__result__bar__box">
+                <img src="assets/images/blue.jpg">
+                <div class="container__result__bar__box__ID">
+                    <div class="container__result__bar__box__number">31,570</div>
+                    <div class="container__result__bar__box__name">Total Revenue</div>
+                </div>
+            </div>
+            <div class="container__result__bar__box">
+                <img src="assets/images/red.jpg">
+                <div class="container__result__bar__box__ID">
+                    <div class="container__result__bar__box__number">280</div> 
+                    <div class="container__result__bar__box__name">Today's Sales</div>
+                </div>
+            </div>
+            <div class="container__result__bar__box">
+                <img src="assets/images/purple.jpg">
+                <div class="container__result__bar__box__ID">
+                    <div class="container__result__bar__box__number">0.16%</div>
+                    <div class="container__result__bar__box__name">Conversion</div>
+                </div>
+            </div>
+        </div>
+        <div class="container__result__columns__box">
+            <div class="container__result__columns__box__column"><span>YEARLY SALES REPORT</span></div>
+            <div class="container__result__columns__box__column"><span>TOTAL REVENUE</span></div>
+            <div class="container__result__columns__box__column"><span>TOTAL REVENUE</span></div>
+        </div>
+        <div class="container__last__box">
+            <div class="container__last__box__projects">
+                <div class="container__last__box__name">latest projects</div>
+                <div>Your awsome best goes here</div>
+                <table class="container__last__box__projects__table">
+                    <tr>
+                        <th>#</th>
+                        <th>Project Name</th>
+                        <th>Start Date</th>
+                        <th>Due Date</th>
+                        <th>Status</th>
+                        <th>Assign</th> 
+                    </tr>  
+                    <tr>
+                        <td>1</td> 
+                        <td>Minton Admin v1</td>
+                        <td>01/01/2016</td>
+                        <td>26/04/2016</td>
+                        <td>Pending</td>
+                        <td>Code Barmen</td>
+                    </tr>                   
+                    <tr>
+                        <td>2</td> 
+                        <td>Minton Frontend v1</td>
+                        <td>01/01/2016</td>
+                        <td>26/04/2016</td>
+                        <td>Pending</td>
+                        <td>Minton Admin</td>
+                    </tr>
+                    <tr>
+                        <td>3</td> 
+                        <td>Minton Admin v1.1</td>
+                        <td>01/05/2016</td>
+                        <td>10/05/2016</td>
+                        <td>Pending</td>
+                        <td>Code Barmen</td>
+                    </tr>
+                    <tr>
+                        <td>4</td> 
+                        <td>Minton Frontend v1.1</td>
+                        <td>01/01/2016</td>
+                        <td>31/05/2016</td>
+                        <td>Work in progress</td>
+                        <td>Minton Admin</td>
+                    </tr>
+                    <tr>
+                        <td>5</td> 
+                        <td>Minton Admin v1.3</td>
+                        <td>01/01/2016</td>
+                        <td>31/05/2016</td>
+                        <td>Comming soon</td>
+                        <td>Code Barmen</td>
+                    </tr>  
+                </table>
+            </div>
+            <div class="container__last__box__members">
+                <div class="container__last__box__members__1">
+                    <img class="portret__photo" src="assets/images/portret.jpg">
+                    <div class="container__last__box__members__1__info">
+                        <div class="container__last__box__members__1__name">
+                            Chadengle
+                        </div>
+                        <div class="container__last__box__members__1__email">
+                            chadengle@gmail.com
+                        </div>
+                        <div class="container__last__box__members__1__level1">
+                            Admin
+                        </div>
+                    </div>
+                </div>                
+                <div class="container__last__box__members__1">
+                    <img class="portret__photo" src="assets/images/portret.jpg">
+                    <div class="container__last__box__members__1__info">
+                        <div class="container__last__box__members__1__name">
+                            Tomasiau
+                        </div>
+                        <div class="container__last__box__members__1__email">
+                            tomasiau@gmail.com
+                        </div>
+                        <div class="container__last__box__members__1__level2">
+                            User
+                        </div>
+                    </div>
+                </div>               
+                <div class="container__last__box__members__1">
+                    <img class="portret__photo" src="assets/images/portret.jpg">
+                    <div class="container__last__box__members__1__info">
+                        <div class="container__last__box__members__1__name">
+                            Ok
+                        </div>
+                        <div class="container__last__box__members__1__email">
+                            ok@gmail.com
+                        </div>
+                        <div class="container__last__box__members__1__level3">
+                            Admin
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
+    {{> partials/footer }}
+</article>
+</body>
+</html>

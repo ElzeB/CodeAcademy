@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJAX + JSON užduotis</title>
+    <style>
+        body {
+            margin: 125px;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-size: 42px;
+            padding: 15px 25px;
+            background-color: #f4f4f4;
+        }
+        select {
+            padding: 7px 10px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+        
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>LIETUVOS APSKRITYS</h1>
+      <p>Apskritis (istoriškai dar vadinta pavietu, ujezdu) – Lietuvos istorinis administracinis vienetas, egzistavęs nuo XIV a. Kaip administracinis vienetas su pertraukomis egzistavo iki 2010 m. Dabar Lietuvos teritorija suskirstyta į 10 apskričių, kurios yra tik teritorinis, bet ne administracinis vienetas.</p>
+      
+      <!-- Jūsų atvaizduojama informacija turi būti talpinama šiame div su-->
+      <div id="information">
+        <!-- Turi būti atvaizduojamas <h2>, kuriame nurodytas apskrities herbo pavadinimas ir <img>, kurio viduje (jo src atribute) yra pasirinktos apskirities herbas  (visie šie duomnenys turi būti imami iš apskritys.json failo) -->
+      </div>
+      <br /></br>
+
+      <select id="city-select">
+        <option>Pasirinkite apskritį</option
+        >
+        <option value="Alytaus apskritis">Alytaus apskritis</option>
+        <option value="Kauno apskritis">Kauno apskritis</option>
+        <option value="Klaipėdos apskritis">Klaipėdos apskritis</option>
+        <option value="Marijampolės apskritis">Marijampolės apskritis</option>
+        <option value="Panevėžio apskritis">Panevėžio apskritis</option>
+        <option value="Šiaulių apskritis">Šiaulių apskritis</option>
+        <option value="Tauragės apskritis">Tauragės apskritis</option>
+        <option value="Telšių apskritis">Telšių apskritis</option>
+        <option value="Utenos apskritis">Utenos apskritis</option>
+        <option value="Vilniaus apskritis">Vilniaus apskritis</option>
+      </select>
+    </div>
+  </body>
+
+  <script>
+      // 1. Inicijuojamas kintamasis (pasiimama <select>)
+      let select = document.querySelector("#city-select");
+      let information = document.querySelector("#information");
+  
+      // 3. Sukuriama funkcija, kuri atvaizduos informaciją
+      let keiciamApskritis = () => {
+
+      // 3.1. Sukuriamas XHR objektas
+      let xhr = new XMLHttpRequest();
+      // 3.2. OPEN - type, url/file, async(true arba false)
+      xhr.open("GET", "apskritys.json", true);
+      // 3.3. onload funckija, kuri atliks statuso tikrinimą ir informacijos atvaizdavimą
+      xhr.onload = function () {
+        if(this.status === 200) {
+          let apskritys = JSON.parse(this.responseText);
+          let output = '';
+          
+          for (let i in apskritys){
+            if(apskritys[i].apskritis === select.value ) {
+              apskritis = apskritys[i]
+            }
+          }
+          output +=`
+            <h2>${apskritis.herbas}</h2>
+          <img src ="${apskritis.herbo_paveikslėlis}"/>
+          `;
+          information.innerHTML = output;
+          
+        }
+      }
+      // 3.4. Užklausos išsiuntimas
+      xhr.send();
+      };
+      // 2. Sukuriamas event'as (naudoti "change" event'ą <select> tagui), kuriam įvykus bus atliekma funkcija (event'ą rekomenduojama perkelti į JS kodo apačią)
+      document.querySelector("select").addEventListener("change", keiciamApskritis);
+  </script>
+</html>
+

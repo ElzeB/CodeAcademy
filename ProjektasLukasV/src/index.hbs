@@ -9,6 +9,12 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function myFunction() {
+    var element = document.getElementsByClassName("nav__meniu__list");
+    element.classList.toggle("nav__meniu__list__active");
+ }
+    </script>
 </head>
 
 <body>
@@ -16,7 +22,7 @@
         {{> partials/nav }}
         {{> partials/social }}
 
-    <div class="mainPage">
+    <div class="mainPage active-element">
         <div class="pimg1">
             <div class="logo__box">
                 <div><img src="assets/images/logoresized.png"></div>
@@ -173,12 +179,12 @@
                 </div>
             </div>
         </div>
-    </div> 
+    
 
     <footer class="footer">
         <p>&copy; 2023 by Jade &amp; Andy. Proudly created with Wix.com</p>
     </footer>
-
+</div> 
     <script src="index.js"></script>
 </body>
 </html>

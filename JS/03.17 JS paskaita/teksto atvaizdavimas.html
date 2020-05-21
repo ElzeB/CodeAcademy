@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2020-03-17 paskaitos Užduotis Nr. 3</title>
+  </head>
+  <style>
+    #container {
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <form id="user-registration">
+      <div class="form-group">
+        <label for="user-message">Your Message:</label>
+        <input type="text" name="message" id="user-message">
+      </div>
+    </form>
+​
+    <div id="container">
+      <p>Friend receives: <span id="output"></span></p>
+    </div>
+​
+  <script>
+    // UŽDUOTIS Nr. 3
+    // Naudojant šiuos įvykius:
+​
+    // keydown ir keyup - lankytojui paspaudus ir atleidus mygtuką.
+    
+    // Padarykite, kad pradėjus vesti tekstą į <input> jis bus atvaizduojamas
+    // kaip <span> su id output vidinis tekstas
+    // PATARIMAS: Naudokie addEventListener!!!
+​
+    // SPREDNIMAS:
+
+    let input = document.getElementById("user-message");
+    let output = document.getElementById("output");
+
+    input.addEventListener("keyup", () =>  output.innerHTML = input.value);
+    
+  </script>
+</html>

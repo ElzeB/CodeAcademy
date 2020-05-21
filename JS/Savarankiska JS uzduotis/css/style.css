@@ -1,0 +1,15 @@
+/* CSS kodas*/
+#body {
+    position: relative;
+    margin: 0;
+}
+
+
+#centerBox {
+    position: absolute;
+    display: flex;
+    width: 50%;
+    height: 50%;
+    background-color: pink;
+
+}

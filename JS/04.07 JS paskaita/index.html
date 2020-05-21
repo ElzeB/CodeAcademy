@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavScript OOP</title>
+  </head>
+  <body>
+    <script>
+//       let firstName = 'Ernestas',
+//       let lastName = 'Rutkauskas',
+//       let hobbies = ['tennis', 'basketball', 'football'],
+// ​
+//       function showInformation(name, surname, likes) {
+//         return `${name} ${surname} likes ${likes[0]}, ${likes[1]}, ${likes[2]}.`;
+//       }
+//       function showActivities(likes) {
+//         return `Likes: ${likes[0]}, ${likes[1]}, ${likes[2]}.`;
+//       }
+// ​
+//       console.log(showInformation(firstName, lastName, hobbies));
+// Perrašykite viršuje pateiktą kodą objektinio programavimo būdu
+
+      // let user = {
+      //   firstName: 'Ernestas',
+      //   lastName: 'Rutkauskas',
+      //   hobbies: ['tennis', 'basketball', 'football'],
+
+      //   showInformation: function() {
+      //     return `${this.firstName} ${this.lastName} likes ${this.hobbies[0]}, ${this.hobbies[1]}, ${this.hobbies[2]}.`;
+      //   },
+      //   showActivities: function() {
+      //     return `Likes: ${this.hobbies[0]}, ${this.hobbies[1]}, ${this.hobbies[2]}.`;
+      //   }
+      // }
+      // console.log(user.showActivities());
+      // console.log(user.showInformation());
+
+      // // kvietimas
+      // function useObj() {
+      //   console.log(obj.showInformation);
+        
+      // }
+      // window.addEventListener('click', useObj);
+
+      //1. Objects
+      //1.1. Creating object (object literal)
+      let circle = {
+        radius: 1,
+        location: {
+          x: 1,
+          y: 1
+        },
+        draw: function() {
+          return 'Circle is drawing.'
+        }
+      }
+
+      console.log(circle);
+
+       //1.2. Creating object (constructor function)
+       function Circle1(radius) {
+          this.radius = radius;
+          this.draw = function() {
+          return 'Circle is drawing.'
+          };
+       }
+
+       const circle1 = new Circle1(1);
+       console.log(circle1);
+       
+       //1.3. Creating object (classes)
+       class Circle2 {
+         constructor(radius) {
+           this.radius = radius
+         }
+         draw() {
+          return 'Circle is drawing.'
+          }
+       }
+       const circle2 = new Circle2(1);
+       console.log(circle2);
+
+         //1.4. Creating object (subclasses)
+         class Circle3 extends Circle2 {
+           constructor(radius, color){
+           super(radius);
+           this.color = color;
+         }
+        }
+
+        const circle3 = new Circle3(1, 'red');
+        console.log(circle3);
+        
+        //2. Data types categories: 1. Value Type (primitives); 2. Reference Type (objects)
+        //2.1 Primitives 
+        let x1 = 10;
+        let y1 = x1;
+        x1 = 20;
+        console.log(x1, y1);
+        
+        //2.2 Objects
+        let obj = {value: 10};
+
+        let increase = (object) => {
+          object.value++
+        }
+        increase(obj);
+        console.log(obj);
+        
+       //3. Adding/removing properties
+       function Circle4(radius) {
+          this.radius = radius;
+          this.draw = function() {
+          return 'Circle is drawing.'
+          };
+       }
+      
+       const circle4 = new Circle4(1);
+        //Pridejimas
+       circle4.location = {X: 0, y: 0};
+       console.log(circle4);
+       //Panaikinimas
+       delete circle4.location;
+       console.log(circle4);
+       
+       //4. Iterate through object
+       //4.1.Budas Nr 1 pamatyti objektu keys su for...in
+       for (let key in circle4) {
+        console.log(`${key}: ${circle4[key]}`);
+        
+       }
+
+       // 4.2. Budas Nr 
+       Object.keys(circle4);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Color Filter</title>
+    <style>
+      h1 {
+        margin-top: 100px;
+        text-align: center;
+      }
+      .container {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+      }
+      .box {
+        margin: 5px;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f4f4f4;
+        font-size: 34px;
+      }
+
+      .controlers {
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+      }
+      select {
+        margin: 10px;
+        padding: 5px 10px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Change the color of the box</h1>
+    <div class="container">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+    </div>
+
+    <div class="controlers">
+      <select id="boxes">
+        <option value="1">Box Nr. 1</option>
+        <option value="2">Box Nr. 2</option>
+        <option value="3">Box Nr. 3</option>
+        <option value="4">Box Nr. 4</option>
+        <option value="5">Box Nr. 5</option>
+        <option value="6">Box Nr. 6</option>
+      </select>
+      <select id="colors">
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="blue">Blue</option>
+        <option value="yellow">Yellow</option>
+        <option value="grey">Grey</option>
+        <option value="salmon">Salmon</option>
+      </select>
+    </div>
+
+    <script>
+      // Naudodami Fetch API, padarytkite taip, kad vartotojui pasirinkus atitinkamą BOX (pasirinkimas atliekmas naudojant <select id="boxes">), ir pasirinkus atitinkamą spalva (pasirinkimas atliekmas naudojant <select id="colors">), pakist pasirinkto BOX spalvą į tą kurią jis pasirinko. Spalvas būtina imti iš colors.json failo (jame yra splavos turinčios dvi vertes, viena vertė reikalinga palyginimui, o kita (hex), spalvos priskyrimui).
+        
+        let selectColors = document.querySelector("#colors");
+
+        const changeColor = () => {
+        let selectBox = document.querySelector("#boxes").value;
+        let boxes = document.querySelectorAll(".box");
+
+        fetch('colors.json')
+        .then(res => res.json())
+        .then(data => {
+
+            data.colors.forEach(color => {
+
+                if (selectColors.value === color.colorName){
+                    boxes[selectBox-1].style.backgroundColor = color.hexCode;
+                }
+            });
+          });
+   
+        };
+
+      selectColors.addEventListener('change', changeColor);
+
+    </script>
+  </body>
+</html>

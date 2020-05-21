@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+        #container {
+        display: flex;
+        justify-content: center;
+        }
+        #box {
+        width: 150px;
+        height: 150px;
+        background: salmon;
+        }
+        #btns {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+        }
+        .btn {
+        margin: 10px;
+        display: inline-block;
+        padding: 7px 15px;
+        background: #F4F4F4;
+        }
+        .form-group {
+        margin-top: 15px;
+        display: flex;
+        justify-content: center;
+        }
+        </style>
+
+    <title>03.18 paskaita</title>
+</head>
+<body>
+
+<div id="container">
+    <div id="box"></div>
+</div>
+<div id="btns">
+    <div class="btn" id="btn1">Pakeisti dydį</div>
+    <div class="btn" id="btn3">Plėsti/siaurinti į šoną</div>
+</div>
+<div class="form-group">
+    <input type="text" id="input">
+</div>
+
+
+
+<script>
+
+let changeSize = document.getElementById("btn1");
+let changePosition = document.getElementById("btn3");
+let box = document.getElementById("box");
+let input = document.getElementById("input");
+    
+        changeSize.addEventListener("click", ()=> {
+            box.style.width = input.value + "px";
+            box.style.height = input.value + "px";
+            box.style.transition = "2s"
+        });
+
+        changePosition.addEventListener("click", ()=> {
+            box.style.width = input.value + "px";
+            box.style.height = input.value + "px";
+            box.style.transition = "2s"
+        });
+
+</script>
+
+</body>
+</html>

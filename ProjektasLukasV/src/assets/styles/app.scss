@@ -15,13 +15,6 @@ body {
     height: 100%;
 }
 
-body::after {
-    content: '';
-    display: block;
-    height: 130px; 
-    background: #403e39;
-  }
-
 .mainPage {
     position: relative;
     margin: 0;

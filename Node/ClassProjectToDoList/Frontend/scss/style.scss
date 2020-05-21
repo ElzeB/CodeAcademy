@@ -1,0 +1,57 @@
+@import "./register.scss";
+
+.homeContainer {
+  .profilePicture {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+
+  .innerLi {
+    width: 100%;
+  }
+
+  .email {
+    color: white;
+    margin-right: 10px;
+  }
+
+  .toDoItemContainer {
+    height: calc(100vh - 54px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .listContainer {
+      margin-top: -27px;
+      max-width: 600px;
+      background-color: white;
+      text-align: center;
+
+      ul.list-group {
+        li {
+          min-width: 400px;
+          text-align: left;
+          cursor: pointer;
+
+          &:hover {
+            background-color: #a7a7a7;
+          }
+
+          &.checked {
+            background-color: #b0e5b0;
+          }
+        }
+      }
+
+      button {
+        margin: 20px auto;
+      }
+
+      .customNav {
+        width: 400px;
+      }
+    }
+  }
+}

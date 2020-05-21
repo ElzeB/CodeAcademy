@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Ernestas",
+    "email": "info@ernestas.lt",
+    "friends": ["Tomas", "Rasa"]
+  },
+  {
+    "id": 2,
+    "name": "Tomas",
+    "email": "info@tomas.lt",
+    "friends": ["Ernestas", "Rasa"]
+  },
+  {
+    "id": 3,
+    "name": "Rasa",
+    "email": "info@rasa.lt",
+    "friends": ["Tomas", "Ernestas"]
+  }
+]

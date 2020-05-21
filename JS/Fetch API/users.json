@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "name": "Ernestas",
+    "email": "info@ernestas.lt"
+  },
+  {
+    "id": 2,
+    "name": "Tomas",
+    "email": "info@tomas.lt"
+  },
+  {
+    "id": 3,
+    "name": "Rasa",
+    "email": "info@rasa.lt"
+  }
+]

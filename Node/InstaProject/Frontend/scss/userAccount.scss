@@ -1,0 +1,28 @@
+body {
+    background-color: #fafafa;
+    margin:0;
+    
+    .navbar {
+        background-color: #ffffff;
+        .container {
+            .row {
+                width: 100%;
+            }
+        }
+        input {
+           font-size: 12px;
+           background-color: #fafafa;
+           margin: 0;
+           padding: 5px;
+           border: solid 1px rgba(var(--b6a,219,219,219),1);
+           min-width: 125px;
+           width: 215px;
+        }
+    }
+
+    .profilePicture {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+    }
+}

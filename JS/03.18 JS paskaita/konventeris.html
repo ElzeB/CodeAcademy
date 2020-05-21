@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <title>03.18 paskaita</title>
+    <style>
+        body{
+        margin-top:70px;
+        background:#333;
+        color:#fff;
+        }
+    </style>
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+        <h1 class="display-4 text-center mb-3">Svorių skaičiuoklė</h1>
+        <form>
+            <div class="form-group">
+            <input id="kgInput" type="number" class="form-control form-control-lg" placeholder="Nurodykite svorį kilogramais...">
+            </div>
+        </form>
+        <div id="output">
+            <div class="card text-white bg-primary mb-2">
+            <div class="card-body">
+                <h4>Gramai:</h4>
+                <div id="gramsOutput"></div>
+            </div>
+            </div>
+            <div class="card text-white bg-success mb-2">
+            <div class="card-body">
+                <h4>Svarai:</h4>
+                <div id="lbOutput"></div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</div>
+
+<script>
+let input = document.getElementById("kgInput");
+let output = document.getElementById("output");
+let gramsOutput = document.getElementById("gramsOutput");
+let lbOutput = document.getElementById("lbOutput");
+
+input.addEventListener("input", () => {
+    output.style.display = "block";
+    gramsOutput.innerHTML = input.value * 1000 + "g";
+    lbOutput.innerHTML = (input.value * 2.2046).toFixed(2) + "g";
+
+});
+output.style.display = "none";
+
+</script>
+
+
+
+
+</body>
+</html>

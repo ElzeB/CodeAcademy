@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2020-03-23 Užduotis Nr. 1</title>
+  </head>
+  <style>
+      .green-text {
+        color: green;
+      }
+</style>
+  <body>
+    <div id="main">
+
+        <h2>Hello World</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet.
+        </p>
+        <button id="add">Add Green Text</button>
+        <button id="remove">Remove Green Text</button>
+
+    </div>
+
+    <script>
+    let main = document.querySelector("#main");
+
+    let headLine = document.createElement("h2");
+    let headLineText = document.createTextNode("Hello World");
+    headLine.appendChild(headLineText);
+    main.appendChild(headLine);
+
+    let firstPar = document.createElement("p");
+    let firstParText = document.createTextNode("Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet sint consequatur eius modi, et voluptas dicta soluta nesciunt. Eveniet voluptatem fugit, dolorum necessitatibus pariatur ea similique modi asperiores iure.");
+    firstPar.appendChild(firstParText);
+    main.appendChild(firstPar);
+
+    let ul = document.createElement("ul");
+    let li = document.createElement("li");
+    let liText = document.createTextNode("Item");
+    ul.appendChild(li);
+    li.appendChild(liText);
+    main.appendChild(ul);
+
+    let secondPar = document.createElement("p");
+    let secondParText = document.createTextNode("Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste amet sint consequatur eius modi, et voluptas dicta soluta nesciunt. Eveniet voluptatem fugit, dolorum necessitatibus pariatur ea similique modi asperiores iure.");
+    secondPar.appendChild(secondParText);
+    main.appendChild(secondPar);
+    
+    let buttonAdd = document.querySelector('#add');
+    let buttonRemove = document.querySelector('#remove');
+    let para = document.querySelector("p");
+    let headline = document.querySelector("h2");
+
+    buttonAdd.addEventListener("click", () => {
+        para.classList.add("green-text");
+        headline.classList.add("green-text");
+    })
+
+    buttonRemove.addEventListener("click", () => {
+        para.classList.remove("green-text");
+        headline.classList.add("green-text");
+    })
+
+    let liToRemove = document.querySelectorAll("li")[1];
+    list.removeChild(liToRemove);
+
+
+    console.log(li[1]);
+    
+
+
+
+
+    </script>
+  </body>
+</html>

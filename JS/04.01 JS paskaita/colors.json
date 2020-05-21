@@ -1,0 +1,28 @@
+{
+  "colors": [
+    {
+      "colorName": "red",
+      "hexCode": "#FF0000"
+    },
+    {
+      "colorName": "green",
+      "hexCode": "#008000"
+    },
+    {
+      "colorName": "blue",
+      "hexCode": "#0000FF"
+    },
+    {
+      "colorName": "yellow",
+      "hexCode": "#E7A600"
+    },
+    {
+      "colorName": "grey",
+      "hexCode": "#808080"
+    },
+    {
+      "colorName": "salmon",
+      "hexCode": "#FA8072"
+    }
+  ]
+}

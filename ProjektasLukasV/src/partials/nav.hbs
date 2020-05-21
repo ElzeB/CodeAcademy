@@ -1,4 +1,4 @@
-<nav class="nav" id="nav__burger">
+<nav class="nav">
     <div class="icons__mobile">
         <ul class="icons__mobile__ul">
             <li>
@@ -18,29 +18,53 @@
             </li>
         </ul>
     </div>
-    <ul class="nav__meniu__list">
-        <li>
-            <a href="#">home</a>
-        </li>           
-        <li>
-            <a href="#services__section">services</a>
-        </li>         
-        <li>
-            <a href="#portfolio__section">portfolio</a>
-        </li>           
-        <li>
-            <a href="#about__us__content">about us</a>
-        </li>          
-        <li>
-            <a href="#contact__content">contact</a>
-        </li>   
-        <li>
-            <a href="#">book online</a>
-        </li>
-        <li>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars fa-2x"></i>
-            </a>
-        </li>
-    </ul>
+    <div class="nav__meniu__list active__element">
+        <ul>
+            <li>
+                <a href="#">home</a>
+            </li>           
+            <li>
+                <a href="#services__section">services</a>
+            </li>         
+            <li>
+                <a href="#portfolio__section">portfolio</a>
+            </li>           
+            <li>
+                <a href="#about__us__content">about us</a>
+            </li>          
+            <li>
+                <a href="#contact__content">contact</a>
+            </li>   
+            <li>
+                <a href="#">book online</a>
+            </li>
+            <li>
+                <a class="icon">
+                    <i id="menu__toggle" class="fa fa-bars fa-2x menu__toggle active__element" onclick="myFunction() "></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+    {{!-- <div class="nav__meniu__list__active active__element" id="">
+        <ul>
+            <li>
+                <a href="#">home</a>
+            </li>           
+            <li>
+                <a href="#services__section">services</a>
+            </li>         
+            <li>
+                <a href="#portfolio__section">portfolio</a>
+            </li>           
+            <li>
+                <a href="#about__us__content">about us</a>
+            </li>          
+            <li>
+                <a href="#contact__content">contact</a>
+            </li>   
+            <li>
+                <a href="#">book online</a>
+            </li>
+        </ul>
+    </div> --}}
 </nav>

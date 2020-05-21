@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <style>
+
+    .dropdown-content {
+        display: none;
+    }
+
+    .show {display: block;}
+    
+    </style>
+    <title>03.18 paskaita</title>
+</head>
+<body>
+  
+    <div class="menu">
+        <span class="title" onclick="myFunction()"  class="dropbtn"> Paspauskite mane!</span>
+        <ul id="myDropdown" class="dropdown-content">
+          <li>Cake</li>
+          <li>Donut</li>
+          <li>Honey</li>
+        </ul>
+      </div>
+    
+<script>
+
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+</script>
+
+</body>
+</html>

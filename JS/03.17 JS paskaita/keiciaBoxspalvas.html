@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>2020-03-17 paskaitos užduotis Nr. 1</title>
+    <style>
+      .container {
+        display: flex;
+      }
+
+      .box {
+        margin: 10px;
+        width: 200px;
+        height: 200px;
+        background: salmon;
+        font-size: 42px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .button {
+        margin: 10px;
+        width: 200px;
+        height: 50px;
+        background: #f4f4f4;
+        font-size: 18px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0px 5px 5px #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">1</div>
+      <div class="box" id="box2">2</div>
+      <div class="box" id="box3">3</div>
+      <div class="box" id="box4">4</div>
+      <div class="box" id="box5">5</div>
+    </div>
+
+    <div class="container">
+      <div class="button" id="button1">GELTONA</div>
+      <div class="button" id="button2">ŽALIA</div>
+      <div class="button" id="button3">MĖLYNA</div>
+      <div class="button" id="button4">RAUDONA</div>
+      <div class="button" id="button5">JUODA</div>
+    </div>
+  </body>
+
+  <script>
+    // UŽDUOTIS Nr. 1
+    // Naudojant šiuos įvykius:
+
+    // click – kai pelės kairysis mygtukas spustelėja elementą (jutiklinio ekrano įrenginiai sukuria jį ant piršto paspaudimo).
+    // contextmenu – kai pelė dešiniuoju pelės mygtuku spustelėkite elementą.
+    // mouseover / mouseout – kai pelės žymeklis užeina virš / palieka elementą.
+    // mousedown / mouseup – kai pelės mygtukas paspaudžiamas / atleidžiamas nuo elemento.
+    // mousemove – kai pelė judinama.
+
+    // Pakeiskite dėžučių pažymėtų skačiais nuo 1 iki 5
+    // spalvas į tokias, kokios yra nurodytas po jomis
+    // esančiame mygtuke. Kiekvienam mygtukui turi būti
+    // priskirtas kitoks įvykis nei prieš tai buvusiems
+    // t.y. reikės panaudi visu 5 įvtkius (pvz.: Paspaudus
+    // mygtuką pavadinimu "GELTONA", tokia spalva bus
+    // pakeičiamas virš jo esančio bloko (1) spalva).
+    // PATARIMAS: Naudokie addEventListener!!!
+
+    //SPREDNIMAS:
+
+    // let box1 = document.getElementById("box1");
+    // let box2 = document.getElementById("box2");
+    // let box3 = document.getElementById("box3");
+    // let box4 = document.getElementById("box4");
+    // let box5 = document.getElementById("box5");
+
+    // let button1 = document.getElementById("button1");
+    // let button2 = document.getElementById("button2");
+    // let button3 = document.getElementById("button3");
+    // let button4 = document.getElementById("button4");
+    // let button5 = document.getElementById("button5");
+
+    // button1.addEventListener ("click", () => {
+    //     box1.style.backgroundColor = "yellow"
+    // });
+    // button2.addEventListener ("contextmenu", () => {
+    //     box2.style.backgroundColor = "green"
+    // });
+    // button3.addEventListener ("mouseout", () => {
+    //     box3.style.backgroundColor = "blue"
+    // });
+    // button4.addEventListener ("mouseup", () => {
+    //     box4.style.backgroundColor = "red"
+    // });
+    // button5.addEventListener ("mousemove", () => {
+    //     box5.style.backgroundColor = "black"
+    // });
+
+///////////////////
+
+    let salmon = false;
+
+    button1.addEventListener ("click", () => {
+        
+        if (salmon === false) {
+        box1.style.backgroundColor = "yellow";
+        salmon = true; 
+            } else {
+                box1.style.backgroundColor = "salmon";
+                salmon = false; 
+            }    
+    });
+
+    
+    button2.addEventListener ("contextmenu", () => {
+
+        if (salmon === false) {
+        box2.style.backgroundColor = "green";
+        salmon = true;
+            } else {
+                box2.style.backgroundColor = "salmon";
+                salmon = false; 
+            }
+    });
+
+    button3.addEventListener ("mouseout", () => {
+
+        if (salmon === false) {
+        box3.style.backgroundColor = "blue";
+        salmon = true;
+        } else {
+            box3.style.backgroundColor = "salmon";
+            salmon = false; 
+        }
+    });
+
+
+
+    button4.addEventListener ("mouseup", () => {
+
+        if (salmon === false) {
+        box4.style.backgroundColor = "red";
+        salmon = true;
+        } else {
+            box4.style.backgroundColor = "salmon";
+            salmon = false;  
+        }
+    });
+
+
+    button5.addEventListener ("mousemove", () => {
+
+        if (salmon === false) {
+        box5.style.backgroundColor = "black";
+        salmon = true;
+        } else {
+            box5.style.backgroundColor = "salmon";
+            salmon = false;  
+        }  
+    });
+
+  </script>
+</html>

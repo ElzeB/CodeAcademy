@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praktika Nr. 2</title>
+    <style>
+      body {
+        background-color: #f4f4f4;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 100px;
+      }
+      .box {
+        width: 400px;
+        height: 400px;
+        background-color: #fff;
+        box-shadow: 0px 0px 10px #ddd;
+      }
+      .btn {
+        padding: 10px 25px;
+        margin: 10px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+          'Lucida Sans', Arial, sans-serif;
+        font-size: 1.2em;
+        color: #fff;
+        border-radius: 3px;
+      }
+      .btn:hover {
+        opacity: 0.7;
+        cursor: pointer;
+      }
+      #blue {
+        background-color: blue;
+      }
+      #red {
+        background-color: red;
+      }
+      #green {
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box"></div>
+    </div>
+    <div class="container" id="btns">
+      <div class="btn" id="blue">Mėlynas</div>
+      <div class="btn" id="red">Raudonas</div>
+      <div class="btn" id="green">Žalias</div>
+    </div>
+    <script>
+    //Funkcinis budas
+
+    // let buttons  = document.querySelectorAll('.btn');
+
+    // let box = document.querySelector('.box');
+
+    // buttons.forEach(function(button) {
+    //   button.addEventListener('click', function () {
+    //     box.style.backgroundColor = button.id;
+    //   });
+    // });
+
+    //Objektinis būdas
+    
+    class Items {
+      constructor(button, box) {
+        this.button = button;
+        this.box = box;
+      }
+
+      changeColor() {
+        this.button.forEach((item) => {
+          item.addEventListener('click', () => {
+            this.box.style.backgroundColor = item.id;
+          });
+      });
+      }
+    }
+
+    let clickButton = new Items(
+      document.querySelectorAll('.btn'),
+      document.querySelector('.box')
+    );
+
+    clickButton.changeColor();
+    
+  
+    </script>
+  </body>
+</html>

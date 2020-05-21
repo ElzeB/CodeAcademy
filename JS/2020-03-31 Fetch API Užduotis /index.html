@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Fetch API</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+      integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="display-4 mb-4">Fetch API užduotis</h1>
+      <div class="d-flex">
+        <button class="btn btn-primary mr-4" id="getGreeting">
+          Get Greeting
+        </button>
+        <button class="btn btn-info mr-4" id="getUsers">
+          Get Users From JSON
+        </button>
+        <button class="btn btn-warning mr-4" id="getPosts">
+          Get Users From API
+        </button>
+      </div>
+      <hr />
+      <div id="output"></div>
+    </div>
+
+    <script>
+      //----- 1. Get Greeting mygtukas (sample.txt) -----
+      // 1.1. UŽDUOTIS: Naudodami Fetch API turite atvaizduoti pilną pasisveikinimą su vardu pvz."Labas, mano vardas yra Ernestas." (akreipti dėmesį, kad sample.txt vardo nėra, jį reikės pridėti patiems).
+
+      const getText = () => {
+        fetch('sample.txt')
+        .then(res => res.text())
+        .then(data => {
+          let output = '';
+          document.querySelector("#output").innerHTML = data + ' Elze';
+        });
+      };
+      document.querySelector("#getGreeting").addEventListener('click', getText);
+      //----- 2. Get Users From JSON mygtukas (users.json) -----
+      // 2.1. UŽDUOTIS: Naudodami Fetch API turite atvaizduoti pilną inforaciją apie vartotojus sąraše (su id, vardu, el. paštu ir draugų sąrašu, pateiktu kaip sąrašas sąraše ul > li > ul > li).
+
+      const getUsers = () => {
+        fetch('users.json')
+        .then(res => res.json())
+        .then(data => {
+          let output = '';
+
+          data.forEach(user => {
+            output += `
+            <ul>
+              <li>${user.id}</li>
+              <li>${user.name}</li>
+              <li>${user.email}</li>
+              <ul>
+                <li>${user.friends[0]}</li>
+                <li>${user.friends[1]}</li>
+              </ul>
+            </ul>
+            `
+          });
+          document.querySelector("#output").innerHTML = output;
+        });
+      }
+
+      document.querySelector("#getUsers").addEventListener('click', getUsers);
+      //----- 3. Get Users From API mygtukas (https://api.github.com/users) -----
+      // 3.1. UŽDUOTIS: Naudodami Fetch API turite atvaizduoti pilną inforaciją apie vartotojus sąraše (su id, login ir avatar_url).
+      const getPosts = () => {
+        fetch("https://api.github.com/users")
+        .then(res => res.json())
+        .then(data => {
+          let output = '';
+
+          data.forEach(user => {
+            output += `
+            <div>
+              <h3>${user.id}</h3>
+              <p>${user.login}</p>
+              <img src = ${user.avatar_url} width ="80" height = "80" />
+            </div>
+            `
+          });
+
+          document.querySelector("#output").innerHTML = output;
+        });
+      };
+
+      document.querySelector("#getPosts").addEventListener("click", getPosts);
+
+    </script>
+  </body>
+</html>

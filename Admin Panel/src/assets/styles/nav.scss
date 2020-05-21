@@ -1,0 +1,103 @@
+.nav {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    background: #3F51B5;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    &__left  {
+        min-width: 240px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+            a {
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: #fff;
+            }
+            img {
+                margin-right: 10px;
+                &:hover {
+                    cursor: pointer;
+
+                }
+            }
+            span {
+            font-size: 20px;
+            text-transform: uppercase;
+            }  
+    }
+    &__right {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+            &__menu {
+                display: flex;
+                align-items: center; 
+                img {
+                    margin: 0 20px;
+                    &:hover {
+                        cursor: pointer; 
+                    }
+                }
+                .search-wrapper {
+                    position: relative;
+                }
+            }
+            &__list ul {
+                display: flex;
+                align-items: center;
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                li {
+                    position: relative;
+                    display: inline-block;
+                    padding: 0 12px;
+                    line-height: 70px;
+                    a {
+                    display: block;      
+                        img {
+                        overflow: hidden;
+                        vertical-align: middle;
+                           &:hover {
+                                cursor: pointer;
+                        
+                            }
+                        }
+                    }
+                }
+            }
+            &__list .portret__photo {
+                height: 30px;
+                width: 30px;
+                border-radius: 50%;
+            }
+        }
+    &.sidenav-hide {
+        .nav__left {
+            min-width: 70px;
+            span {
+                display: none;
+            }
+        }
+    }
+}
+.search-wrapper > input {
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.1);
+    color: #fff;
+    padding: 6px 18px;
+}
+
+.search-wrapper img {
+        position: absolute;
+        top: 50%;
+        right: 5px;
+        transform: translateY(-50%);
+        margin-right: 0;
+        }

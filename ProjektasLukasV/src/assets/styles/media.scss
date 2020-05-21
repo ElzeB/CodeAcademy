@@ -12,6 +12,19 @@
       left: 20px;
       align-items: center;
     }
+
+  //   .nav__meniu__list.responsive {position: relative;}
+  //   .nav__meniu__list.responsive .icon {
+  //   position: absolute;
+  //   right: 0;
+  //   top: 0;
+  // }
+
+    // .nav__meniu__list.responsive a {
+    //   float: none;
+    //   display: block;
+    //   text-align: left;
+    // }
   }
 
   @media screen and (max-width: 600px) {
@@ -35,22 +48,6 @@
       }
     }
   }
-  
-  // @media screen and (max-width: 700px) {
-  //   .nav.mobile {position: relative;}
-  //   .nav.mobile .icon {
-  //     position: absolute;
-  //     right: 0;
-  //     top: 0;
-  //   }
-  // }
-
-  //   .nav.mobile a {
-  //     float: none;
-  //     display: block;
-  //     text-align: center;
-  //   }
-  // }
 
   @media screen and (max-width: 600px) {
     .about__us__content, .contact__content {

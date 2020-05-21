@@ -1,0 +1,54 @@
+.registerContainer {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.registerContainer .card {
+  min-width: 400px;
+}
+
+.homeContainer .profilePicture {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.homeContainer .innerLi {
+  width: 100%;
+}
+.homeContainer .email {
+  color: white;
+  margin-right: 10px;
+}
+.homeContainer .toDoItemContainer {
+  height: calc(100vh - 54px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeContainer .toDoItemContainer .listContainer {
+  margin-top: -27px;
+  max-width: 600px;
+  background-color: white;
+  text-align: center;
+}
+.homeContainer .toDoItemContainer .listContainer ul.list-group li {
+  min-width: 400px;
+  text-align: left;
+  cursor: pointer;
+}
+.homeContainer .toDoItemContainer .listContainer ul.list-group li:hover {
+  background-color: #a7a7a7;
+}
+.homeContainer .toDoItemContainer .listContainer ul.list-group li.checked {
+  background-color: #b0e5b0;
+}
+.homeContainer .toDoItemContainer .listContainer button {
+  margin: 20px auto;
+}
+.homeContainer .toDoItemContainer .listContainer .customNav {
+  width: 400px;
+}
+
+/*# sourceMappingURL=style.css.map */

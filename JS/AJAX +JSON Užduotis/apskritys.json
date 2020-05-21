@@ -1,0 +1,53 @@
+[
+  {
+    "apskritis": "Alytaus apskritis",
+    "herbas": "Alytaus apskrities herbas",
+    "herbo_paveikslėlis": "assets/Alytaus-apskrities-herbas.png"
+  },
+  {
+    "apskritis": "Kauno apskritis",
+    "herbas": "Kauno apskrities herbas",
+    "herbo_paveikslėlis": "assets/Kauno-apskrities-herbas.png"
+  },
+  {
+    "apskritis": "Klaipėdos apskritis",
+    "herbas": "Klaipėdos apskrities herbas",
+    "herbo_paveikslėlis": "assets/Klaipėdos-apskrities-herbas.png"
+  },
+  {
+    "apskritis": "Marijampolės apskritis",
+    "herbas": "Marijampolės apskrities herbas",
+    "herbo_paveikslėlis": "assets/Marijampolės-apskrities-herbas.png"
+  },
+  {
+    "apskritis": "Panevėžio apskritis",
+    "herbas": "Panevėžio apskrities herbas",
+    "herbo_paveikslėlis": "assets/Panevėžio-apskrities-herbas.png"
+  },
+  {
+    "apskritis": "Šiaulių apskritis",
+    "herbas": "Šiaulių apskrities herbas",
+    "herbo_paveikslėlis": "assets/Šiaulių-apskrities-herbas.png"
+  },
+  {
+    "apskritis": "Tauragės apskritis",
+    "herbas": "Tauragės apskrities herbas",
+    "herbo_paveikslėlis": "assets/Tauragės-apskrities-herbas.png"
+  },
+  {
+    "apskritis": "Telšių apskritis",
+    "herbas": "Telšių apskrities herbas",
+    "herbo_paveikslėlis": "assets/Telšių-apskrities-herbas.png"
+  },
+  {
+    "apskritis": "Utenos apskritis",
+    "herbas": "Utenos apskrities herbas",
+    "herbo_paveikslėlis": "assets/Utenos-apskrities-herbas.png"
+  },
+  {
+    "apskritis": "Vilniaus apskritis",
+    "herbas": "Vilniaus apskrities herbas",
+    "herbo_paveikslėlis": "assets/Vilniaus-apskrities-herbas.png"
+  }
+]
+
