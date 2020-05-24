@@ -3,6 +3,9 @@
   position: relative;
 }
 
+select {
+  z-index: 1;
+}
 
 .App {
   max-width: 1080px;
@@ -22,16 +25,6 @@
   justify-content: center;
 }
 
-/* .Resume-owner {
-  height: 56px;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 48px;
-  line-height: 56px;
-  color: #000000;
-  margin-top: 43px;
-} */
-
 .Resume-owner-job-title {
   font-style: normal;
   font-weight: bold;
@@ -50,22 +43,6 @@
   z-index: 1;
   display: flex;
   justify-content: center;
-}
-
-.Rectangle-3 {
-  position: absolute;
-  margin-top: 153px;
-  width: 248px;
-  height: 28px;
-  background: #000000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-style: normal;
-  font-weight: bold;
-  color: #ffffff;
-  font-size: 24px;
-  line-height: 28px;
 }
 
 .Rectangle-4 {
@@ -148,24 +125,14 @@ h3 {
 }
 
 .dot:active {
-  background: blue;
+  background: #7ABCAC;
 }
 
 .item2 {
   grid-row: 1;
   grid-column: 2 / 4;
   height: 194px;
-  /* margin-left: 82px; */
 }
-/* 
-.item2 h3 {
-  margin: 0;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-} */
 
 .About-me-info {
   font-style: normal;
@@ -233,62 +200,11 @@ hr {
   position: relative;
   grid-template-columns: auto auto auto;
   grid-row: 3;
-  /* grid-column: 1 / 4; */
   column-gap: 68px;
   justify-content: space-between;
   margin-top: 35px;
 }
-/* .item7 {
-  grid-row: 3;
-} */
 
-/* .Work-experience-flex-box {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  margin: 0;
-} */
-
-/* .Work-Experience-ul{
-  list-style-type: disc;
-  margin: 10px 0;
-  padding: 0;
-}
-
-.Work-Experience-ul li {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  margin: 10px 0 10px 20px;
-} */
-
-/* h4 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-  margin: 0;
-}
-
-h5 {
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  margin: 2px;
-} */
-
-/* .item8 {
-  grid-row: 3;
-}
-.item9 {
-  grid-row: 3;
-} */
 .item10 {
   grid-template-columns: auto auto auto;
   display: grid;
@@ -301,7 +217,5 @@ h5 {
   margin-top: 35px;
   margin-bottom: 53px;
 }
-.item11 {
-  grid-row: 4;
-}
+
 

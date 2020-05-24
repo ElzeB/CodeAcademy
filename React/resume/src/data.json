@@ -1,0 +1,130 @@
+{
+    "en": {
+        "header": {
+            "name": "SOPHIE ALPERT",
+            "position": "PROGRAMMER"
+        },
+        "links": {
+            "title": "LINKS"
+        },
+        "about": {
+            "title": "About Me",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel tempor lacinia. Suspendisse non augue egestas, dapibus justo et, lobortis ex. Nullam tortor diam, venenatis at enim a, lacinia porttitor erat. Vivamus tempor dictum leo id aliquam. Praesent elit lacus, tempus ac vehicula in, imperdiet dapibus elit. Nullam scelerisque euismod leo id vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. "
+        },
+        "education": {
+            "title": "EDUCATION",
+            "schools": [
+                {
+                    "school":"SCHOOL NAME",
+                    "degree": "Degree"
+                },
+                {
+                    "school":"SCHOOL NAME",
+                    "degree": "Degree"
+                }
+            ]
+        },
+        "personalSkills": {
+            "title":"PERSONAL SKILLS",
+            "skills": [
+              {  
+                "name": "TEAMWORK",
+                "level": "advanced"
+              },
+              {
+                "name": "COMMUNICATION",
+                "level": "intermediate"
+              },
+              {
+                "name": "ORGANIZATION",
+                "level": "beginer"
+              }
+            ]
+        },
+        "technicalSkills": {
+            "title":"TECHNICAL SKILLS",
+            "skills": [
+              {  
+                "name": "HTML",
+                "level": "advanced"
+              },
+              {  
+                "name": "CSS/SCSS",
+                "level": "advanced"
+              },
+              {
+                "name": "JAVASCRIPT",
+                "level": "intermediate"
+              },
+              {
+                "name": "REACT.JS",
+                "level": "intermediate"
+              }
+            ]
+        }
+    },
+    "lt": {
+        "header": {
+            "name": "SOPHIE ALPERT",
+            "position": "PROGRAMUOTOJAS"
+        },
+        "links": {
+            "title": "NUORODOS"
+        },
+        "about": {
+            "title": "Apie mane",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel tempor lacinia. Suspendisse non augue egestas, dapibus justo et, lobortis ex. Nullam tortor diam, venenatis at enim a, lacinia porttitor erat. Vivamus tempor dictum leo id aliquam. Praesent elit lacus, tempus ac vehicula in, imperdiet dapibus elit. Nullam scelerisque euismod leo id vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. "
+        },
+        "education": {
+            "title": "IŠSILAVINIMAS",
+            "schools": [
+                {
+                    "school":"MOKYKLA",
+                    "degree": "Išsilavinimas"
+                },
+                {
+                    "school":"MOKYKLA",
+                    "degree": "Išsilavinimas"
+                }
+            ]
+        },
+        "personalSkills": {
+            "title":"ASMENINĖS SĄVYBĖS",
+            "skills": [
+                {  
+                "name": "KOMANDINIS DARBAS",
+                "level": "advanced"
+                },
+                {
+                "name": "BENDRADARBIAVIMAS",
+                "level": "intermediate"
+                },
+                {
+                "name": "ORGANIZUOTUMAS",
+                "level": "beginer"
+                }
+            ]
+        },
+        "technicalSkills": {
+            "title":"TECHNINĖS ŽINIOS",
+            "skills": [
+                {  
+                "name": "HTML",
+                "level": "advanced"
+                },
+                {  
+                "name": "CSS/SCSS",
+                "level": "advanced"
+                },
+                {
+                "name": "JAVASCRIPT",
+                "level": "intermediate"
+                },
+                {
+                "name": "REACT.JS",
+                "level": "intermediate"
+                }
+            ]
+        }
+    }
+}

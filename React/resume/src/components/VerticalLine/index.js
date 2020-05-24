@@ -2,9 +2,8 @@ import React from "react";
 import "./index.css";
 
 function VerticalLine({level}) {
-  const Tag = `style = {{left: ${level}%}}`;
 
-    return <div className="VerticalLine" Tag></div>;
+    return <div className="VerticalLine" style={{left:`${level}%`}}></div>;
   }
   
   export default VerticalLine;

@@ -8,18 +8,33 @@ import WorkExperience from "./components/WorkExperienceContentBlock";
 import VerticalLine from "./components/VerticalLine";
 import Contacts from "./components/ContactsContentBlock";
 import BlackBoxTitle from "./components/BlackBoxTitle";
+import data from "./data.json";
 
 function App() {
+
+  let lang = "en";
+  let langData;
+
+  if(lang === "en") langData = data.en;
+
+  const [state, setState] = React.useState(langData);
+  
   return (
     <div className="App">
       <div className="Content-Container">
         <header className="Header">
+
+          <select setLang={setState}>
+            <option value="lt">Lietuviškai</option>
+            <option value="en">English</option>
+          </select>
+
           <div className="Rectangle-2">
-            <Title level="3">SOPHIE ALPERT</Title>
+            <Title level="3">{data[lang].header.name}</Title>
           </div>
-          <div className="Rectangle-3">
-            PROGRAMMER
-          </div>
+          
+          <BlackBoxTitle level="153">{data[lang].header.position}</BlackBoxTitle>
+         
           <div className="Rectangle-4">
           </div>
         </header>
@@ -148,46 +163,9 @@ function App() {
                 >
               </Contacts>
 
-            {/* <div className="grid-item item7"> */}
-              {/* <div className="Work-experience-flex-box">
-                <h4>JOB POSITION</h4>
-                <h5>Company</h5>
-                <h5>2018 - present</h5>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel tempor lacinia. Suspendisse non augue.</p>
-              <ul className="Work-Experience-ul">
-                <li className="Work-Experiance-li">Lorem ipsum dolor</li>
-                <li className="Work-Experiance-li">Consectetur adipiscing elit</li>
-              </ul> */}
-            {/* </div> */}
-            {/* <div className="grid-item item8">
-            <div className="Work-experience-flex-box">
-            <h4>JOB POSITION</h4>
-              <h5>Company</h5>
-              <h5>2017 - 2018</h5>
-            </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel tempor lacinia. Suspendisse non augue.</p>
-              <ul className="Work-Experience-ul">
-                <li className="Work-Experiance-li">Lorem ipsum dolor</li>
-                <li className="Work-Experiance-li">Consectetur adipiscing elit</li>
-              </ul>
-            </div> */}
-            {/* <div className="grid-item item9">
-            <div className="Work-experience-flex-box">
-            <h4>JOB POSITION</h4>
-              <h5>Company</h5>
-              <h5>2015 - 2017</h5>
-            </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel tempor lacinia. Suspendisse non augue.</p>
-              <ul className="Work-Experience-ul">
-                <li className="Work-Experiance-li">Lorem ipsum dolor</li>
-                <li className="Work-Experiance-li">Consectetur adipiscing elit</li>
-              </ul>
-            </div> */}
         </div>
       </div>
       </div>
-   
   );
 }
 
