@@ -1,0 +1,36 @@
+.Small-btn {
+    right: 0;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0.6rem 2.5rem;
+    background-color: #e50914;
+    color: #e5e5e5;
+    border: 1px solid red;
+    position: absolute;
+    bottom: 14px;
+    left: 20px;
+  }
+
+  .Small-btn-remove {
+    right: 0;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0.6rem 2.5rem;
+    background-color: transparent;
+    color: #e5e5e5;
+    border: 1px solid red;
+    position: absolute;
+    bottom: 14px;
+    left: 20px;
+  }
+  

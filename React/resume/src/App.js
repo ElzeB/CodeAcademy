@@ -8,26 +8,23 @@ import WorkExperience from "./components/WorkExperienceContentBlock";
 import VerticalLine from "./components/VerticalLine";
 import Contacts from "./components/ContactsContentBlock";
 import BlackBoxTitle from "./components/BlackBoxTitle";
+import SelectLanguage from "./components/SelectLanguage";
 import data from "./data.json";
 
 function App() {
 
-  let lang = "en";
-  let langData;
+  const [lang, setLang] = React.useState("lt");
 
-  if(lang === "en") langData = data.en;
-
-  const [state, setState] = React.useState(langData);
+  const onCahnge = (event) => {
+    setLang(event.target.value);
+  }
   
   return (
     <div className="App">
       <div className="Content-Container">
         <header className="Header">
 
-          <select setLang={setState}>
-            <option value="lt">Lietuviškai</option>
-            <option value="en">English</option>
-          </select>
+          <SelectLanguage onChange={onCahnge}/>
 
           <div className="Rectangle-2">
             <Title level="3">{data[lang].header.name}</Title>
