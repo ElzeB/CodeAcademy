@@ -1,35 +1,29 @@
-import React from "react";
+import React, {useCallback, useState} from "react";
 import "./index.css";
 import BigButton from "../BigButton";
 import {withRouter} from  'react-router-dom';
 import eye from "../../images/eye.png"
 
-const initState = {
-  email: '',
-  password: '',
-  emailError:'',
-  passwordError:''
-}
+// const regexp = RegExp ('tester');
+// const initState = {
+//   userName: '',
+//   password: '',
+//   userNameError:'',
+//   passwordError:''
+// }
 
-class LoginForm extends React.Component {
-  state = initState;
+export function LoginForm ({history}) {
+  const [usernameInput, setUserNameInput] = useState('');
+  const [passwordInput, setPasswordInput] = useState('');
+  // const [passwordShown, setPasswordShown] = useState('');
 
-  constructor(props) {
-    super(props);
-    this.state = {
-      usernameInput: "",
-      passwordInput: "",
-      passwordShown: false,
-    };
-  }
-
-    signIn = (e) => {
+  let signIn = useCallback(async (e) => {
       e.preventDefault();
-      fetch ('https://academy-video-api.herokuapp.com/auth/login', {
+      await fetch ('https://academy-video-api.herokuapp.com/auth/login', {
           method: 'POST',
           body: JSON.stringify({
-           username: this.state.usernameInput,
-           password: this.state.passwordInput,
+           username: usernameInput,
+           password: passwordInput,
           }),
           headers: {'Content-Type':'application/json'},
         })
@@ -41,65 +35,67 @@ class LoginForm extends React.Component {
       })
       .then((response) => {
         localStorage.setItem('token', response.token);
-        console.log(response);
-        this.props.history.replace('/content');
+         history.replace('/content');
       })
       .catch(console.log);
-    };
+    });
 
-    setUsername = (e) => {
-      this.setState({ usernameInput: e.target.value });
+    let setUsername = (e) => {
+      setUserNameInput( e.target.value );
     }
-    setPassword =(e) => {
-     this.setState({ passwordInput: e.target.value });
-    }
-
-    validate = () => {
-      let inputError = false;
-      const errors = {
-        emailError: '',
-        passwordError: ''
-      }
-      if(this.state.email.length<1 && this.state.password.length<1) {
-        inputError = true;
-        errors.passwordError = 'Please enter a valid email address'
-        errors.passwordError = 'Please enter a valid email address'
-      } 
-
-      this.setState({
-        ...errors 
-      })
-      return inputError;
+    let setPassword =(e) => {
+      setPasswordInput( e.target.value );
     }
 
-    onSubmit = e => {
-      e.preventDefault()
+    // let validate = (e) => {
+    //   let inputError = false;
+    //   const errors = {
+    //     userNameError: '',
+    //     passwordError: ''
+    //   }
+    //   if(!userName) {
+    //     inputError = true;
+    //     errors.userNameError = 'Please enter a valid user name'
+    //   } else if (!userName.match(regexp)) {
+    //     inputError = true;
+    //     errors.userNameError = (
+    //       <span style={{color: 'red' }}>Please enter a valid user name</span>
+    //      )
+    //   } 
 
-      const err = this.validate();
-      if(!err) {
-        this.setState(initState);
-      }
-    }
+    //   this.setState({
+    //     ...errors 
+    //   })
+    //   return inputError;
+    // }
+
+    // let onSubmit = e => {
+    //   e.preventDefault()
+
+    //   const err = this.validate();
+    //   if(!err) {
+    //     this.setState(initState);
+    //   }
+    // }
 
     // togglePasswordVisiblity = () => {
     //   this.setState(this.passwordShown ? false : true);
     // };
 
-  render () {
     return (
     <div className="form">
       <div className="form-container">
-        <form onSubmit={this.signIn}>
+        <form onSubmit={signIn}>
           <div className="input-container">
-            <input className="input" type="text" required onChange={this.setUsername}/>
+            <input className="input" type="username" required onChange={setUsername}/>
             <label>Username</label>
-            <span>{this.state.emailError}</span>
+            {/* <span>{userNameError}</span> */}
           </div>
          
           <div className="input-container">
-            <input className="input" type="password" required onChange={this.setPassword}/>
-            <label>Password <img src={eye} alt="eye-logo" onClick={this.togglePasswordVisiblity}/></label>
-            <span>{this.state.passwordError}</span>
+            <input className="input" type="password" required onChange={setPassword}/>
+            <label>Password <img src={eye} alt="eye-logo" /*onClick={togglePasswordVisiblity}*/ /></label>
+            {/* <span>{passwordError}</span> */}
           </div>
          
           <BigButton type="submit" title="Sign In" onClick={e => this.onSubmit(e)}/>
@@ -108,6 +104,5 @@ class LoginForm extends React.Component {
     </div>
     );
   }
-}
 
 export default withRouter(LoginForm);

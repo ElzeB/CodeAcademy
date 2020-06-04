@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import BigButton from "../BigButton";
 import "./index.css";
 
-function Header() {
+function Header({props}) {
   
     return (
       <div className="header-container">

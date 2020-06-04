@@ -1,7 +1,6 @@
 import React from "react";
 import MovieCard from "../MovieCard";
 import "./index.css";
-import BigButton from "../BigButton";
 
 class MoovieCardContainer extends React.Component {
   constructor(props) {
