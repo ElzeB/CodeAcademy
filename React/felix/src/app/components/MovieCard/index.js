@@ -3,13 +3,10 @@ import SmallButton from "../SmallButton";
 import "./index.css";
 
 function MovieCard({img, title, description}) {
-
   const [isFavorite, setButton] = React.useState(true);
 
   const onClick = (event) => {
-    console.log('Test');
-    
-    setButton(!isFavorite)
+    setButton(!isFavorite);
   }
 
   const buttonText = isFavorite? 'Favorite': 'Remove 💔';

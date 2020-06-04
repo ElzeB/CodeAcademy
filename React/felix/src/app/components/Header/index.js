@@ -1,9 +1,10 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import BigButton from "../BigButton";
 import "./index.css";
 
-class Header extends React.Component {
-  render() {
+function Header() {
+  
     return (
       <div className="header-container">
         <div className="header-top">
@@ -19,21 +20,12 @@ class Header extends React.Component {
               stroke="#D22F27"
             />
           </svg>
-          <BigButton title="Sign In"></BigButton>
-        </div>
+          
+          <Link to="/login"><BigButton title="Sign In"></BigButton></Link>
 
-        <div className="header-body">
-          <div className="center-content">
-            <div className="title">Wanna more Content ?</div>
-            <BigButton title="Get Access"></BigButton>
-          </div>
-        </div>
-
-        <div className="separator">
         </div>
       </div>
     );
   }
-}
 
 export default Header;

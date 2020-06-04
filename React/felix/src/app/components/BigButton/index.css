@@ -11,4 +11,8 @@
   background-color: #e50914;
   color: #e5e5e5;
   border: none;
+  cursor: pointer;
+}
+.Big-btn:focus {
+  outline: none;
 }
