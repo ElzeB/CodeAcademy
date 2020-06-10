@@ -4,7 +4,7 @@ import Hero from "../components/Hero";
 import MoovieCardContainer from "../components/MoovieCardContainer";
 import Footer from "../components/Footer";
 
-const PageLayout = () => {
+const PageLayout = ({favorites, getItemId}) => {
   const [data, setData] = useState([]);
   const [error, setError] = useState("");
     
@@ -31,6 +31,8 @@ const PageLayout = () => {
       <MoovieCardContainer 
       data = {data}
       error = {error}
+      favorites = {favorites}
+      getItemId = {getItemId}
       />
       <Footer />
     </div>

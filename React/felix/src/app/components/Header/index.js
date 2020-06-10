@@ -1,9 +1,30 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+import { Link, Switch, Route } from "react-router-dom";
 import BigButton from "../BigButton";
 import "./index.css";
 
-function Header({props}) {
+const Header = () => {
+  const [token, setToken] = useState(false);
+
+  useEffect(() => {
+    if (token !== !!window.localStorage.getItem('token')) {
+      setToken(!!window.localStorage.getItem('token'));
+    }
+  }, []);
+
+  const Logout = async () => {
+    const response = await fetch(
+      'https://academy-video-api.herokuapp.com//auth/logout',
+      {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+          token: window.localStorage.getItem('token'),
+        }),
+       });
+    if (!response.ok) throw response;
+    localStorage.removeItem('token');
+  }
   
     return (
       <div className="header-container">
@@ -20,9 +41,14 @@ function Header({props}) {
               stroke="#D22F27"
             />
           </svg>
-          
-          <Link to="/login"><BigButton title="Sign In"></BigButton></Link>
-
+          <Switch>
+            <Route exact path = "/content">
+              <Link to="/"><BigButton title="Log out" onClick={Logout}></BigButton></Link>
+            </Route>
+            <Route path = "*">
+              <Link to="/login"><BigButton title="Sign In"></BigButton></Link>
+            </Route>
+          </Switch>
         </div>
       </div>
     );

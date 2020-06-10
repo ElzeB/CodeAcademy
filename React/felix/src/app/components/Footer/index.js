@@ -1,8 +1,8 @@
-import React, {useState} from "react";
+import React from "react";
 import "./index.css";
 
-class Footer extends React.Component {
-  render() {
+const Footer = () => {
+ 
     return (
       <div className="Footer">
         <span className="Copyright">
@@ -78,6 +78,5 @@ class Footer extends React.Component {
       </div>
     );
   }
-}
 
 export default Footer;

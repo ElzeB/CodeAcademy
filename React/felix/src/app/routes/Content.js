@@ -2,21 +2,12 @@ import React, {useState, useCallback, useEffect} from "react";
 import MoovieCardContainer from "../components/MoovieCardContainer";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import Loader from "../components/Loader";
 
-const Content = () => {
+const Content = ({favorites, getItemId}) => {
 
   const [data, setData] = useState([]);
   const [error, setError] = useState("");
-  const [favorites, setfavorites] = useState([]);
-
-  // getItemId = (id) => {
-  //   let { favorites } = this.state;
-  //   if (favorites.includes(id)) {
-  //     this.setState({ favorites: favorites.filter((el) => el !== id) });
-  //   } else {
-  //     this.setState({ favorites: favorites.concat(id) });
-  //   }
-  // };
 
   const drawContent = useCallback(async () => {
     const response = await fetch (
@@ -40,8 +31,12 @@ const Content = () => {
           <MoovieCardContainer 
           data = {data}
           error = {error}
+          favorites = {favorites}
+          getItemId = {getItemId}
           />
           <Footer />
+          {/* <Loader /> */}
+
       </div>
     );
   }
