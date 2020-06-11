@@ -14,6 +14,7 @@ const MoovieCardContainer = ({data, favorites, getItemId}) => {
             description={item.description}
             isFavorite={favorites.includes(item.id)}
             onClick = {() => getItemId(item.id)}
+            movieId = {item.id}
           ></MovieCard>
           )
         )}

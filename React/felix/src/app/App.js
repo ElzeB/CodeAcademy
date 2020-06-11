@@ -18,15 +18,15 @@ function App() {
   const [favorites, setFavorites] = useState([]);
   
   
-  const getItemId = id => {
-    console.log(id);
+  const getItemId = movieId => {
+    console.log(movieId);
     
-    if (favorites.includes(id)) {
-      console.log(id);
+    if (favorites.includes(movieId)) {
+      console.log(movieId);
       
-      setFavorites(favorites.filter(el => el !==id) );
+      setFavorites(favorites.filter(el => el !==movieId) );
     } else {
-      setFavorites(favorites.concat(id));
+      setFavorites(favorites.concat(movieId));
     }
   }
 console.log(favorites);
@@ -44,9 +44,9 @@ console.log(favorites);
           <PrivateRoute exact path="/content">
             <Content favorites={favorites} getItemId={getItemId} />
           </PrivateRoute>
-          <PrivateRoute exact path="/content/items/id">
+          <Route exact path="/content/:movieId">
             <SingleMovieCardPage />
-          </PrivateRoute>
+          </Route>
           <Route path="*">
             <div>404 Page not found</div>
           </Route>

@@ -1,0 +1,46 @@
+.SingleMovieCard {
+    display: grid;
+    grid-template-columns: auto auto;
+   
+    /* align-items: flex-start;
+    justify-content: center;
+    width: 270px; */
+    /* height: 370px; */
+    margin: 53px 53px 220px 53px
+  }
+  
+  .SingleMovieCardImage {
+    width: 316px;
+    height: 392px;
+  }
+  
+  .SingleMovieCardTitle {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #e5e5e5;
+  }
+  
+  .SingleMovieCardDescription {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    color: #e5e5e5;
+    height: 35px;
+    margin-top: 5px;
+  }
+  
+  .SingleMovieCardTextContent {
+    height: 168px;
+    position: relative;
+    padding: 10px;
+  }
+
+  .watch-button {
+    
+  }
+  

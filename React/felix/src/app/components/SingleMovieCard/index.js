@@ -14,7 +14,7 @@ function SingleMovieCard({img, title, description, isFavorite, onClick}) {
             <div className="SingleMovieCardTitle">{title}</div>
             <div className="SingleMovieCardDescription">{description}</div>
             <SmallButton onClick={onClick} title={buttonText} className={className}/>
-            <SmallButton onClick={onClick} title={buttonText} className={className}/>
+            <SmallButton onClick={onClick} title="Watch" className={className}/>
           </div>
         </div>
     );

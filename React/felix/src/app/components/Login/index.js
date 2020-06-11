@@ -1,4 +1,5 @@
 import React, {useCallback, useState} from "react";
+import { connect } from "react-redux";
 import "./index.css";
 import BigButton from "../BigButton";
 import {withRouter} from  'react-router-dom';
@@ -15,7 +16,8 @@ import eye from "../../images/eye.png"
 export function LoginForm ({history}) {
   const [usernameInput, setUserNameInput] = useState('');
   const [passwordInput, setPasswordInput] = useState('');
-  // const [passwordShown, setPasswordShown] = useState('');
+  
+  const [passwordShown, setPasswordShown] = useState('');
 
   let signIn = useCallback(async (e) => {
       e.preventDefault();
@@ -105,4 +107,16 @@ export function LoginForm ({history}) {
     );
   }
 
-export default withRouter(LoginForm);
+  function mapStateToProps({ authentication }) {
+    return {
+      token: authentication.token,
+    };
+  }
+  
+  function mapDispatchToProps(dispatch) {
+    return {
+      setToken: token => dispatch({ type: "SET_TOKEN", token }),
+    };
+  }
+
+export default connect(mapStateToProps, mapDispatchToProps)(withRouter(LoginForm));
