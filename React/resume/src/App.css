@@ -3,10 +3,6 @@
   position: relative;
 }
 
-select {
-  z-index: 1;
-}
-
 .App {
   max-width: 1080px;
   width: 100%;
@@ -56,22 +52,47 @@ select {
   display: grid;
   grid-template-columns: auto auto auto;
   margin-top: 297px;
-  column-gap: 80px;
-  row-gap: 40px;
+  column-gap: 25px;
 }
 
-/* .grid-item {
-  border: 1px solid black;
-} */
-
 .item1 {
-  grid-row: 1;
-  width: 288px;
+  /* grid-row: 1; */
   height: 205px;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
+}
+
+.item2 {
+  /* grid-row: 1; */
+  grid-column: 2 / 4;
+  height: 194px;
+}
+
+.item3 {
+  /* grid-row: 2; */
+}
+
+.item4 {
+  /* grid-row: 2; */
+}
+
+.item5 {
+  /* grid-row: 2; */
+}
+
+.item6 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  /* grid-row: 3; */
+  column-gap: 68px;
+  margin-top: 35px;
+}
+
+.item10 {
+  margin-top: 35px;
+  margin-bottom: 53px;
 }
 
 .Links-Education-ul, .Skils-ul{
@@ -128,22 +149,12 @@ h3 {
   background: #7ABCAC;
 }
 
-.item2 {
-  grid-row: 1;
-  grid-column: 2 / 4;
-  height: 194px;
-}
-
 .About-me-info {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 19px;
   margin: 15px 0;
-}
-
-.item3 {
-  grid-row: 2;
 }
 
 .hr-mini {
@@ -160,27 +171,6 @@ hr {
     margin-top: 12px;
 }
 
-.item4 {
-  grid-row: 2;
-}
-
-.Personal-skils-teamwork{
-  border-radius: 11px;
-  background-color: #7ABCAC;
-}
-.Personal-skils-communication{
-  border-radius: 11px;
-  background-color: #D8DA79;;
-}
-.Personal-skils-organization{
-  border-radius: 11px;
-  background-color: #C29486;
-}
-
-.item5 {
-  grid-row: 2;
-}
-
 .Technical-skils-html, .Technical-skils-css {
   border-radius: 11px;
   background-color: #7ABCAC;
@@ -195,27 +185,93 @@ hr {
   margin-top: 50px;
 }
 
-.item6 {
-  display: grid;
-  position: relative;
-  grid-template-columns: auto auto auto;
-  grid-row: 3;
-  column-gap: 68px;
-  justify-content: space-between;
-  margin-top: 35px;
+.level-advanced {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    margin: 10px 0 10px 0;
+    padding: 0 10px;
+    border-radius: 11px;
+    background-color: #7ABCAC;
 }
 
-.item10 {
-  grid-template-columns: auto auto auto;
-  display: grid;
+.level-intermediate {
+  display: flex;
   align-items: center;
+  width: fit-content;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 10px 0 10px 0;
+  padding: 0 10px;
+  border-radius: 11px;
+  background-color: #D8DA79;
+}
+
+.level-beginer {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  margin: 10px 0 10px 0;
+  padding: 0 10px;
+  border-radius: 11px;
+  background-color: #C29486;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  margin: 10px 5px 5px 0;
+}
+
+.links-ul {
+  display: flex;
   flex-direction: column;
-  margin: 0;
-  grid-column-gap: 68px;
-  column-gap: 68px;
-  justify-content: space-between;
-  margin-top: 35px;
-  margin-bottom: 53px;
+  list-style-type: none;
+  align-items: baseline;
+  margin: 33px 0 20px 0;
+  padding: 0;
+}
+
+a {
+  display: flex;
+  align-items: center;
+}
+
+.Select-Container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.LinkedinIcon :hover {
+  background: #d60e96;
+  color: #fff;
+}
+
+@media screen and (max-width:698px) {
+  .Resume-grid-box {
+    grid-template-columns: auto;
+  }
+  .item6 {
+    grid-template-columns: auto;
+    row-gap: 20px;
+  }
+  .VerticalLine {
+    display: none;
+  }
+  .item2 {
+    grid-row: 1;
+    grid-column: 1;
+  }
 }
 
 

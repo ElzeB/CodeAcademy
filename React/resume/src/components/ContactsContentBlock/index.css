@@ -1,8 +1,7 @@
 .Contacts-flex-box {
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto;
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
     margin: 0;
 }

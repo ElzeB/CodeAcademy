@@ -1,11 +1,6 @@
 .SingleMovieCard {
     display: grid;
     grid-template-columns: auto auto;
-   
-    /* align-items: flex-start;
-    justify-content: center;
-    width: 270px; */
-    /* height: 370px; */
     margin: 53px 53px 220px 53px
   }
   
@@ -38,9 +33,57 @@
     height: 168px;
     position: relative;
     padding: 10px;
+    height: 50%;
   }
 
   .watch-button {
-    
+    right: 0;
+    font-weight: 400;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 0.6rem 2.5rem;
+    background-color: #e50914;
+    color: #e5e5e5;
+    border: 1px solid red;
+    bottom: 14px;
+    left: 175px;
+    position: absolute;
   }
+
+  .videoWrapper iframe {
+    position: fixed;
+    top: 10%;
+    left: 10%;
+    width: 120vh;
+    height: calc(120vh / 16 * 9);
+  }
+
+  .modal {
+    display: none;
+  }
+
+  .modal-content {
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+  }
+
+  .is-active {
+    display: inline;
+  }
+
+  .modal-content img {
+    cursor: pointer;
+    padding: 15px;
+    width: 30px;
+    height: 30px;
+  }
+  
   

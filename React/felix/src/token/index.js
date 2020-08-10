@@ -1,15 +1,6 @@
-const DEFAULT_TOKEN_STATE = {
-    token: localStorage.getItem('token'),
-  }
+import reducer from "./reducer";
+import * as types from "./types";
+import * as selectors from "./selectors";
+import * as actions from "./actions";
 
-  function tokenReducer(state = DEFAULT_TOKEN_STATE, action) {
-    switch (action.type) {
-      case "SET_TOKEN": {
-        console.log(action);
-        return { ...state, token: action.token };
-      }
-    }
-    return state;
-  }
-
-  export default tokenReducer;
+export default { reducer, types, selectors, actions };

@@ -3,6 +3,7 @@ import SingleMovieCard from "../components/SingleMovieCard";
 import { useHistory, useLocation, useParams } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
+import "./index.css";
 
 const SingleMovieCardPage = () => {
 
@@ -18,7 +19,7 @@ const SingleMovieCardPage = () => {
       `https://academy-video-api.herokuapp.com/content/items/${movieId}`,
       {
         method: "GET",
-        headers: { "Content-Type": "application/json" },
+        headers: { "Content-Type": "application/json", authorization: localStorage.getItem("token")},
       }
     );
     if (!response.ok) return setError("Trouble with getting movies");
@@ -38,9 +39,10 @@ const SingleMovieCardPage = () => {
             img={movie.image}
             title={movie.title}
             description={movie.description}
+            video={movie.video}
             //   isFavorite={favorites.includes(item.id)}
             //   onClick = {() => getItemId(item.id)}
-          ></SingleMovieCard>
+          ></SingleMovieCard>          
           )}
           <Footer />
         </Fragment>

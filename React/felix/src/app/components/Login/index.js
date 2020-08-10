@@ -3,15 +3,7 @@ import { connect } from "react-redux";
 import "./index.css";
 import BigButton from "../BigButton";
 import {withRouter} from  'react-router-dom';
-import eye from "../../images/eye.png"
-
-// const regexp = RegExp ('tester');
-// const initState = {
-//   userName: '',
-//   password: '',
-//   userNameError:'',
-//   passwordError:''
-// }
+import eye from "../../images/eye.png";
 
 export function LoginForm ({history}) {
   const [usernameInput, setUserNameInput] = useState('');
@@ -48,41 +40,6 @@ export function LoginForm ({history}) {
     let setPassword =(e) => {
       setPasswordInput( e.target.value );
     }
-
-    // let validate = (e) => {
-    //   let inputError = false;
-    //   const errors = {
-    //     userNameError: '',
-    //     passwordError: ''
-    //   }
-    //   if(!userName) {
-    //     inputError = true;
-    //     errors.userNameError = 'Please enter a valid user name'
-    //   } else if (!userName.match(regexp)) {
-    //     inputError = true;
-    //     errors.userNameError = (
-    //       <span style={{color: 'red' }}>Please enter a valid user name</span>
-    //      )
-    //   } 
-
-    //   this.setState({
-    //     ...errors 
-    //   })
-    //   return inputError;
-    // }
-
-    // let onSubmit = e => {
-    //   e.preventDefault()
-
-    //   const err = this.validate();
-    //   if(!err) {
-    //     this.setState(initState);
-    //   }
-    // }
-
-    // togglePasswordVisiblity = () => {
-    //   this.setState(this.passwordShown ? false : true);
-    // };
 
     return (
     <div className="form">

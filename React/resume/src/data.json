@@ -1,26 +1,32 @@
 {
     "en": {
         "header": {
-            "name": "SOPHIE ALPERT",
-            "position": "PROGRAMMER"
+            "name": "ELZE VAINAUSKIENE",
+            "position": "JAVASCRIPT REACT"
         },
         "links": {
             "title": "LINKS"
         },
         "about": {
             "title": "About Me",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel tempor lacinia. Suspendisse non augue egestas, dapibus justo et, lobortis ex. Nullam tortor diam, venenatis at enim a, lacinia porttitor erat. Vivamus tempor dictum leo id aliquam. Praesent elit lacus, tempus ac vehicula in, imperdiet dapibus elit. Nullam scelerisque euismod leo id vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. "
+            "content": "I love activities related to work optimisation and automation, and I successfully optimised various tasks and processes in supply chain area. When I started my first steps in coding, I find out that programming is so relevant to my passion of making work faster and easier. I am looking forward for opportunities to spend more time on it. The technology I'm focusing at the moment on is React."
         },
         "education": {
             "title": "EDUCATION",
             "schools": [
                 {
-                    "school":"SCHOOL NAME",
-                    "degree": "Degree"
+                    "school":"CODE ACADEMY",
+                    "degree": "Front - end Advanced studies",
+                    "info": "800 hours of HTML, CSS, JS, NODE.JS, REACT JS, VUE.JS studying"
                 },
                 {
-                    "school":"SCHOOL NAME",
-                    "degree": "Degree"
+                    "school":"VILNIUS CODING SCHOOL",
+                    "degree": "WEB development",
+                    "info": "100 hours of HTML, CSS, JS, WordPress, PHP studying"
+                },
+                {
+                    "school":"VILNIUS GEDIMINAS TECHNICAL UNIVERSITY",
+                    "degree": "Telecommunication Management Bachelor"
                 }
             ]
         },
@@ -28,16 +34,16 @@
             "title":"PERSONAL SKILLS",
             "skills": [
               {  
-                "name": "TEAMWORK",
+                "name": "PERSISTENCE",
                 "level": "advanced"
               },
               {
-                "name": "COMMUNICATION",
-                "level": "intermediate"
+                "name": "PATIENCE",
+                "level": "advanced"
               },
               {
                 "name": "ORGANIZATION",
-                "level": "beginer"
+                "level": "intermediate"
               }
             ]
         },
@@ -59,32 +65,79 @@
               {
                 "name": "REACT.JS",
                 "level": "intermediate"
+              },
+              {
+                "name": "BOOTSTRAP",
+                "level": "intermediate"
+              },
+              {
+                "name": "WORDPRESS",
+                "level": "intermediate"
               }
             ]
+        },
+        "workExperience": {
+            "title": "Work Experience",
+            "jobs": [
+                {
+                    "company": "UAB INCHCAPE MOTORS",
+                    "from": 2013,
+                    "to": "2020",
+                    "position": "LOGISTICS EXECUTIVE",
+                    "info1": "New vehicles purchase process handling from customer order to delivery in to dealership or distribution.",
+                    "info2": "Daily communication with sales team to improve logistics processes."
+                },
+                {
+                    "company": "UAB PRISMA LIETUVA ",
+                    "from": 2011,
+                    "to": "2013",
+                    "position": "ASSISTANT PRODUCT MANAGER",
+                    "info1": "Uploading products information in to account program based on product managers indications.",
+                    "info2": "In concert with product managers fulfil best customers experience in supermarket."
+                },
+                {
+                    "company": "UAB BAUHOF",
+                    "from": 2010,
+                    "to": "2011",
+                    "position": "PURCHASE SPECIALIST",
+                    "info1": "Issuing purchase orders to suppliers based on purchase request information.",
+                    "info2": "Handle warehouse balance"
+                }
+
+            ]
+        },
+        "contacts": {
+            "title": "CONTACTS"
         }
     },
     "lt": {
         "header": {
-            "name": "SOPHIE ALPERT",
-            "position": "PROGRAMUOTOJAS"
+            "name": "ELZĖ VAINAUSKIENĖ",
+            "position": "JAVASCRIPT REACT"
         },
         "links": {
             "title": "NUORODOS"
         },
         "about": {
             "title": "Apie mane",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel tempor lacinia. Suspendisse non augue egestas, dapibus justo et, lobortis ex. Nullam tortor diam, venenatis at enim a, lacinia porttitor erat. Vivamus tempor dictum leo id aliquam. Praesent elit lacus, tempus ac vehicula in, imperdiet dapibus elit. Nullam scelerisque euismod leo id vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. "
+            "content": "Esu sukaupusi nemažą patirtį tiekimo/logistikos srityje. Tai darbas, kuris buvo lydimas didelio kiekio rankinio darbo. Kas mane paskatino ieškoti metodų ir automatizuoti kuo daugiau kasdienių užduočių. Pasitelkus programavimą, daugelis procesų gali būti pakeisti. Tikiu tuo ir matau didelį potencialą. Šiuo metu persikvalifikuoju ir labiausiai domiuosi Java Script ir React technologijomis."
         },
         "education": {
             "title": "IŠSILAVINIMAS",
             "schools": [
                 {
-                    "school":"MOKYKLA",
-                    "degree": "Išsilavinimas"
+                    "school":"CODE ACADEMY",
+                    "degree": "Front - end Advanced studies",
+                    "info": "800 val of HTML, CSS, JS, NODE.JS, REACT JS, VUE.JS studijavimo"
                 },
                 {
-                    "school":"MOKYKLA",
-                    "degree": "Išsilavinimas"
+                    "school":"VILNIUS CODING SCHOOL",
+                    "degree": "WEB development",
+                    "info": "100 val of HTML, CSS, JS, WordPress, PHP studijavimo"
+                },
+                {
+                    "school":"VILNIAUS GEDIMINO TECHNIKOS UNIVERSITETAS",
+                    "degree": "Telekomunikacijų vadyba"
                 }
             ]
         },
@@ -92,16 +145,16 @@
             "title":"ASMENINĖS SĄVYBĖS",
             "skills": [
                 {  
-                "name": "KOMANDINIS DARBAS",
+                "name": "ATKAKLUMAS",
                 "level": "advanced"
                 },
                 {
-                "name": "BENDRADARBIAVIMAS",
-                "level": "intermediate"
+                "name": "KANTRUMAS",
+                "level": "advanced"
                 },
                 {
                 "name": "ORGANIZUOTUMAS",
-                "level": "beginer"
+                "level": "intermediate"
                 }
             ]
         },
@@ -123,8 +176,49 @@
                 {
                 "name": "REACT.JS",
                 "level": "intermediate"
+                },
+                {
+                "name": "BOOTSTRAP",
+                "level": "intermediate"
+                },
+                {
+                "name": "WORDPRESS",
+                "level": "intermediate"
                 }
             ]
+        },
+        "workExperience": {
+            "title": "Darbo Patirtis",
+            "jobs": [
+                {
+                    "company": "UAB INCHCAPE MOTORS",
+                    "from": 2013,
+                    "to": "2020",
+                    "position": "LOGISTIKOS VADYBININKĖ",
+                    "info1": "Naujų automobilių užsakymų valdymas nuo kliento užsakymo iki pristymo į saloną.",
+                    "info2": "Nuolatinis komunikavimas su gamintojais ir distributoriais dėl pateikto užsakymo statuso ir pristatymo terminų laikymosi."
+                },
+                {
+                    "company": "UAB PRISMA LIETUVA ",
+                    "from": 2011,
+                    "to": "2013",
+                    "position": "PRODUKTO VADOVO ASISTENTĖ",
+                    "info1": "Maisto prekių nomenklatūros tvarkymas buhalterinėje programoje.",
+                    "info2": "Kainų pasikeitimų suvedimas į buhalterinę programą"
+                },
+                {
+                    "company": "UAB BAUHOF",
+                    "from": 2010,
+                    "to": "2011",
+                    "position": "PIRKIMŲ VADYBININKĖ",
+                    "info1": "Prekių užsakymų formavimas atsižvelgiant į nustatytą min prekių likutį.",
+                    "info2": "Suformuotų užsakymų valdymas."
+                }
+
+            ]
+        },
+        "contacts": {
+            "title": "KONTAKTAI"
         }
     }
 }

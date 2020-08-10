@@ -9,6 +9,9 @@ import VerticalLine from "./components/VerticalLine";
 import Contacts from "./components/ContactsContentBlock";
 import BlackBoxTitle from "./components/BlackBoxTitle";
 import SelectLanguage from "./components/SelectLanguage";
+import SkillsContentBlock from "./components/SkillsContentBlock";
+import GithubIcon from './images/github.svg';
+import LinkedinIcon from './images/linkedin.svg';
 import data from "./data.json";
 
 function App() {
@@ -22,9 +25,12 @@ function App() {
   return (
     <div className="App">
       <div className="Content-Container">
+        <div className="Select-Container">
+          <SelectLanguage onChange={onCahnge}/>
+        </div>
         <header className="Header">
 
-          <SelectLanguage onChange={onCahnge}/>
+         
 
           <div className="Rectangle-2">
             <Title level="3">{data[lang].header.name}</Title>
@@ -41,59 +47,64 @@ function App() {
           <div className="grid-item item1">
             <h3>LINKS</h3>
             <Separator />
-            <ul className="Links-Education-ul">
-              <li><a href="http://www.linkedin.com"><span class="dot"></span></a>LINKEDIN/username</li>
-              <li><a href="http://www.twitter.com"><span class="dot"></span></a>TWITTER/@user-handle</li>
-              <li><a href="http://www.github.com"><span class="dot"></span></a>GITHUB/username</li>
-              <li><a href="http://www.facebook.com"><span class="dot"></span></a>BLOG/blog-name</li>
+            <ul className="links-ul">
+              <li><a href="https://www.linkedin.com/in/elze-vainauskiene-230736b0/" target="_blank"><img src={LinkedinIcon} className="LinkedinIcon"/><span>LINKEDIN/elze-vainauskiene</span></a></li>
+              <li><a href="https://github.com/ElzeB" target="_blank"><img src={GithubIcon} />GITHUB/ElzeB</a></li>
             </ul>
           </div>
 
           <div className="grid-item item2">
-            <h3>ABOUT ME</h3>
+            <h3>{data[lang].about.title}</h3>
             <Separator />
             <div className="About-me-info">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel tempor lacinia. Suspendisse non augue egestas, dapibus justo et, lobortis ex. Nullam tortor diam, venenatis at enim a, lacinia porttitor erat. Vivamus tempor dictum leo id aliquam. Praesent elit lacus, tempus ac vehicula in, imperdiet dapibus elit. Nullam scelerisque euismod leo id vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. 
+              {data[lang].about.content}
             </div>
           </div>
 
           <div className="grid-item item3">
-            <h3>EDUCATION</h3>
+            <h3>{data[lang].education.title}</h3>
             <Separator />
             <ul className="Links-Education-ul">
-              <li>SCHOOL NAME</li>
-              <li>2009 - 2013</li>
-              <li>Degree</li>
+              <li>CODE ACADEMY</li>
+              <li>2020 Jan - 2020 Aug</li>
+              <li>Front - end Advanced studies</li>
             </ul>
             <div class="hr-mini"></div>
             <ul className="Links-Education-ul">
-              <li>SCHOOL NAME</li>
-              <li>2009 - 2013</li>
-              <li>Degree</li>
+              <li>VILNIUS CODING SCHOOL</li>
+              <li>2019 Apr - 2019 May</li>
+              <li>WEB development</li>
+            </ul>
+            <div class="hr-mini"></div>
+            <ul className="Links-Education-ul">
+              <li>{data[lang].education.schools[2].school}</li>
+              <li>2002 - 2006</li>
+              <li>{data[lang].education.schools[2].degree}</li>
             </ul>
 
           </div>
           <div className="grid-item item4">
-            <h3>PERSONAL SKILLS</h3>
-            <Separator />
-            <ul className="Skils-ul">
-              <li className="Personal-skils-teamwork">TEAMWORK</li>
-              <li className="Personal-skils-communication">COMMUNICATION</li>
-              <li className="Personal-skils-organization">ORGANIZATION</li>
-            </ul>
-
+            <SkillsContentBlock className="col-4" title={data[lang].personalSkills.title}>
+              {data[lang].personalSkills.skills.map((skill, index) => {
+                return (
+                  <li key={index} className={`level-${skill.level}`}>
+                    {skill.name}
+                  </li>
+                );
+              })}
+            </SkillsContentBlock>
           </div>
 
           <div className="grid-item item5">
-            <h3>TECHNICAL SKILLS</h3>
-            <Separator />
-            <ul className="Skils-ul">
-              <li className="Technical-skils-html">HTML</li>
-              <li className="Technical-skils-css">CSS/SCSS</li>
-              <li className="Technical-skils-js">JAVASCRIPT</li>
-              <li className="Technical-skils-react">REACT.JS</li>
-            </ul>
-
+            <SkillsContentBlock className="col-4" title={data[lang].technicalSkills.title}>
+                {data[lang].technicalSkills.skills.map((skill, index) => {
+                  return (
+                    <li key={index} className={`level-${skill.level}`}>
+                      {skill.name}
+                    </li>
+                  );
+                })}
+              </SkillsContentBlock>
           </div>
         </div>
          
@@ -103,36 +114,36 @@ function App() {
             <div className="grid-item item6">
 
               <WorkExperience 
-              job="JOB POSITION" 
-              company="Company" 
-              year="2018-present"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel tempor lacinia. Suspendisse non augue."
-              detalization1="Lorem ipsum dolor"
-              detalization2="Consectetur adipiscing elit"
+              job={data[lang].workExperience.jobs[0].position}
+              company={data[lang].workExperience.jobs[0].company}
+              from={data[lang].workExperience.jobs[0].from} 
+              to={data[lang].workExperience.jobs[0].to}
+              detalization1={data[lang].workExperience.jobs[0].info1}
+              detalization2={data[lang].workExperience.jobs[0].info2}
               >
               </WorkExperience>
 
               <VerticalLine level="32"></VerticalLine>
 
               <WorkExperience 
-              job="JOB POSITION" 
-              company="Company" 
-              year="2017-2018"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel tempor lacinia. Suspendisse non augue."
-              detalization1="Lorem ipsum dolor"
-              detalization2="Consectetur adipiscing elit"
+              job={data[lang].workExperience.jobs[1].position}
+              company={data[lang].workExperience.jobs[1].company}
+              from={data[lang].workExperience.jobs[1].from} 
+              to={data[lang].workExperience.jobs[1].to}
+              detalization1={data[lang].workExperience.jobs[1].info1}
+              detalization2={data[lang].workExperience.jobs[1].info2}
               >
               </WorkExperience>
 
-              <VerticalLine level="64"></VerticalLine>
+              <VerticalLine level="68"></VerticalLine>
 
               <WorkExperience 
-              job="JOB POSITION" 
-              company="Company" 
-              year="2015-2017"
-              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut justo libero. Vestibulum vitae mattis diam. Vivamus eleifend diam vel tempor lacinia. Suspendisse non augue."
-              detalization1="Lorem ipsum dolor"
-              detalization2="Consectetur adipiscing elit"
+              job={data[lang].workExperience.jobs[2].position}
+              company={data[lang].workExperience.jobs[2].company}
+              from={data[lang].workExperience.jobs[2].from} 
+              to={data[lang].workExperience.jobs[2].to}
+              detalization1={data[lang].workExperience.jobs[2].info1}
+              detalization2={data[lang].workExperience.jobs[2].info2}
               >
               </WorkExperience>
 
@@ -142,24 +153,11 @@ function App() {
 
             <div className="grid-item item10">
               <Contacts 
-                contactType="ADDRESS"
-                detalization1="Imaginary St. 52,"
-                detalization2="Vilnius, Narnia"
+                contactType={data[lang].contacts.title}
+                detalization1="+37067214327"
+                detalization2="elze.vainauskiene@gmail.com"
                 >
               </Contacts>
-              <Contacts 
-                contactType="CONTACT"
-                detalization1="+37060000333"
-                detalization2="email@test.dev"
-                >
-              </Contacts>
-              <Contacts 
-                contactType="SOCIAL"
-                detalization1="Linkedin/username"
-                detalization2="Twitter/@user-handle"
-                >
-              </Contacts>
-
         </div>
       </div>
       </div>
